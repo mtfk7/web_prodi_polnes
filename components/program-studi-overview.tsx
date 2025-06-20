@@ -16,6 +16,7 @@ const programStudi = [
     jobRate: "95%",
     image: "/utama/tim.jpg?height=200&width=300",
     color: "from-green-600 to-emerald-700",
+    colorButton: "from-green-600 to-emerald-700",
     href: "/program-studi/tim",
   },
   {
@@ -27,6 +28,7 @@ const programStudi = [
     graduates: "300+",
     jobRate: "92%",
     image: "/utama/trk.webp?height=200&width=300",
+    colorButton: "from-blue-600 to-cyan-700",
     color: "from-blue-600 to-cyan-700",
     href: "/program-studi/trk",
   },
@@ -40,6 +42,7 @@ const programStudi = [
     jobRate: "90%",
     image: "/utama/ti.jpg?height=200&width=300",
     color: "from-purple-600 to-violet-700",
+    colorButton: "from-purple-600 to-violet-700",
     href: "/program-studi/ti",
   },
   {
@@ -52,6 +55,7 @@ const programStudi = [
     jobRate: "88%",
     image: "/utama/tk.jpg?height=200&width=300",
     color: "from-orange-600 to-red-700",
+    colorButton: "from-orange-600 to-red-700",
     href: "/program-studi/tk",
   },
 ]
@@ -119,7 +123,7 @@ export function ProgramStudiOverview() {
 
                   <Button
                     asChild
-                    className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                    className={`bg-gradient-to-r ${program.colorButton} hover:opacity-90`}
                   >
                     <Link href={program.href}>Pelajari Lebih Lanjut</Link>
                   </Button>
