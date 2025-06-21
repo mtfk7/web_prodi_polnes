@@ -1,37 +1,42 @@
 // Contoh isi file lecturers.ts
 export const lecturers = [
   {
-    name: 'Dr. Ir. Bambang Wijaya',
+    name: 'Agus Triyono, S.T., M.T.',
     position: 'Ketua Program Studi',
     photo: '/dosen/bambang.jpg',
   },
   {
-    name: 'Siti Rahmawati, M.Kom',
+    name: 'Ahmad Rofiq Hakim, S.Pd., M.Kom.',
     position: 'Dosen Pemrograman',
     photo: '/dosen/siti.jpg',
   },
   {
-    name: 'Andi Firmansyah, M.T',
+    name: 'Irwansyah, S.Kom., M.Cs.',
     position: 'Dosen Jaringan',
     photo: '/dosen/andi.jpg',
   },
   {
-    name: 'Linda Kartika, M.Kom',
+    name: 'Karyo Budi Utomo, S.Kom., M.Eng.',
     position: 'Dosen Multimedia',
     photo: '/dosen/linda.jpg',
   },
   {
-    name: 'Nur Hidayah, M.Kom',
+    name: 'Wahyuni Eka Sari, S.Kom., M.Eng.',
     position: 'Dosen AI & IoT',
     photo: '/dosen/nur.jpg',
   },
   {
-    name: 'afafafd, M.Kom',
+    name: 'Abdullah Hanif, S.Kom., M.Kom.',
     position: 'Dosen AI & IoT',
     photo: '/dosen/nur.jpg',
   },
   {
-    name: 'afaf, M.Kom',
+    name: 'Arsan Kumala Jaya, S.Pd., M.T.',
+    position: 'Dosen AI & IoT',
+    photo: '/dosen/nur.jpg',
+  },
+  {
+    name: 'Fara Triadi, S.T., M.T.',
     position: 'Dosen AI & IoT',
     photo: '/dosen/nur.jpg',
   },

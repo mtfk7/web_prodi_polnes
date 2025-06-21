@@ -1,30 +1,28 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { Code2, Palette, Smartphone, Gamepad2, CheckCircle, Clock, Users, Award } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { programsData } from "@/data/trk/programs"
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Code2, Palette, Smartphone, Gamepad2, CheckCircle, Clock, Users, Award } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { programsData } from '@/data/trk/programs';
 
 const iconMap = {
   Code2,
   Palette,
   Smartphone,
   Gamepad2,
-}
+};
 
 export function ExploreProgramsContent() {
   return (
     <div className="bg-white">
-
       {/* Program Overview */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
-          
           <div className="max-w-4xl mx-auto text-center text-black">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{programsData.title}</h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">{programsData.subtitle}</p>
+            <p className="text-gray-600 mb-6 leading-relaxed">{programsData.subtitle}</p>
           </div>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -67,16 +65,14 @@ export function ExploreProgramsContent() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-cyan-100 text-cyan-800">Peminatan</Badge>
+              <Badge className="mb-4 bg-cyan-100 text-cyan-800 px-4 py-2 text-sm">Peminatan</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilih Jalur Anda</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Spesialisasi di bidang yang Anda minati dan menjadi ahli di bidang pilihan Anda
-              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto">Spesialisasi di bidang yang Anda minati dan menjadi ahli di bidang pilihan Anda</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {programsData.specializations.map((spec, index) => {
-                const IconComponent = iconMap[spec.icon as keyof typeof iconMap]
+                const IconComponent = iconMap[spec.icon as keyof typeof iconMap];
                 return (
                   <Card key={index} className="group hover:shadow-xl transition-all duration-300">
                     <CardHeader>
@@ -114,7 +110,7 @@ export function ExploreProgramsContent() {
                       </div>
                     </CardContent>
                   </Card>
-                )
+                );
               })}
             </div>
           </div>
@@ -126,11 +122,9 @@ export function ExploreProgramsContent() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-cyan-100 text-cyan-700">Kurikulum</Badge>
+              <Badge className="mb-4 bg-cyan-100 text-cyan-700 px-4 py-2 text-sm">Kurikulum</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Semester demi Semester</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Kurikulum kami dirancang dengan cermat mulai dari dasar hingga spesialisasi lanjutan
-              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto">Kurikulum kami dirancang dengan cermat mulai dari dasar hingga spesialisasi lanjutan</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -139,9 +133,7 @@ export function ExploreProgramsContent() {
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                          {semester.semester}
-                        </div>
+                        <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{semester.semester}</div>
                         <CardTitle className="text-lg">{semester.title}</CardTitle>
                       </div>
                       <Badge variant="outline" className="text-xs">
@@ -179,7 +171,7 @@ export function ExploreProgramsContent() {
         </div>
       </section>
 
-{/*       
+      {/*       
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
@@ -210,5 +202,5 @@ export function ExploreProgramsContent() {
         </div>
       </section> */}
     </div>
-  )
-} 
+  );
+}

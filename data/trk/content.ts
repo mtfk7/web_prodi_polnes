@@ -41,32 +41,32 @@ export const campusImages = [
 
 export const programHighlights = [
   {
-    icon: 'Sparkles',
-    title: 'Pengembangan Multimedia',
-    description: 'Belajar penerapan multimedia interaktif menggunakan framework dan teknologi modern',
-    gradient: 'from-cyan-50 to-emerald-50',
-    iconGradient: 'from-cyan-600 to-emerald-700',
-  },
-  {
-    icon: 'Palette',
-    title: 'Desain UI/UX',
-    description: 'Menguasai prinsip desain antarmuka dan pengalaman pengguna untuk produk digital',
-    gradient: 'from-pink-50 to-rose-100',
-    iconGradient: 'from-pink-600 to-rose-500',
+    icon: 'Code2',
+    title: 'Pemrograman Dasar & Lanjut',
+    description: 'Menguasai dasar-dasar pemrograman hingga pengembangan aplikasi tingkat lanjut.',
+    gradient: 'from-yellow-50 to-orange-100',
+    iconGradient: 'from-yellow-500 to-orange-500',
   },
   {
     icon: 'Smartphone',
     title: 'Aplikasi Web & Mobile',
-    description: 'Membangun aplikasi web responsif dan aplikasi mobile',
+    description: 'Membangun aplikasi berbasis web dan mobile yang responsif dan modern.',
     gradient: 'from-blue-50 to-cyan-100',
     iconGradient: 'from-blue-600 to-cyan-500',
   },
   {
-    icon: 'Code2',
-    title: 'Creative Coding',
-    description: 'Mengeksplorasi teknologi melalui pemrograman kreatif',
-    gradient: 'from-yellow-50 to-orange-100',
-    iconGradient: 'from-yellow-500 to-orange-500',
+    icon: 'Network',
+    title: 'Jaringan & Keamanan',
+    description: 'Belajar membangun dan mengamankan sistem jaringan komputer.',
+    gradient: 'from-purple-50 to-indigo-100',
+    iconGradient: 'from-purple-600 to-indigo-500',
+  },
+  {
+    icon: 'FlaskConical',
+    title: 'Internet of Things (IoT)',
+    description: 'Mengembangkan sistem terintegrasi berbasis sensor dan konektivitas.',
+    gradient: 'from-green-50 to-teal-100',
+    iconGradient: 'from-green-600 to-teal-500',
   },
 ];
 

@@ -1,53 +1,50 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { CheckCircle } from "lucide-react"
-import Link from "next/link"
-import { programsData } from "@/data/trk/programs"
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { CheckCircle } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { programsData } from '@/data/trk/programs';
 
 export function HowToApply() {
   return (
-    <section id="cara-mendaftar" className="py-20 bg-white">
-      <div className="container px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <Badge className="mb-4 bg-yellow-100 text-yellow-700">Pendaftaran</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cara Mendaftar</h2>
-            <p className="text-gray-600">Siap memulai perjalanan Anda? Berikut yang perlu Anda ketahui</p>
+    <section id="cara-mendaftar" className="relative bg-[#212F4D] py-8 text-white overflow-visible mt-20">
+      <div className="container px-0 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          {/* LEFT TEXT */}
+          <div className="px-8 md:px-16 py-8 z-20 relative">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Jalur Pendaftaran</h2>
+            <p className="text-white/90 text-lg mb-8 max-w-lg">Informasi jalur penerimaan mahasiswa, serta pendaftaran online calon mahasiswa baru selengkapnya dapat diakses melalui tautan-tautan berikut.</p>
+
+            <ul className="mb-8 space-y-3 text-white/90 text-lg font-medium">
+              <li className="flex items-start gap-2 pt-1">
+                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                Jalur SNBP (Seleksi Nasional Berdasarkan Prestasi)
+              </li>
+              <li className="flex items-start gap-2 pt-1">
+                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                Jalur SNBT (Seleksi Nasional Berdasarkan Tes)
+              </li>
+              <li className="flex items-start gap-2 pt-1">
+                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                Jalur Mandiri Polnes
+              </li>
+            </ul>
+
+            <Link href="https://pmb.polnes.ac.id/" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-white text-purple-600 hover:bg-gray-200 font-bold text-lg">Daftar Sekarang</Button>
+            </Link>
+
+            <p className="text-sm text-white/60 mt-4">Batas akhir pendaftaran: 31 Juli 2025</p>
           </div>
 
-          <Card className="p-8">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center mb-6">Jalur Pendaftaran</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-4">
-                {programsData.admissionRequirements.map((requirement, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{requirement}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <Separator className="my-8" />
-
-              <div className="text-center">
-                <Link href="https://pmb.polnes.ac.id/" target="_blank" rel="noopener noreferrer">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-cyan-700 to-cyan-900 hover:from-cyan-800 hover:to-cyan-950"
-                  >
-                    Daftar Sekarang
-                  </Button>
-                </Link>
-                <p className="text-sm text-gray-600 mt-4">Batas akhir pendaftaran: 31 Juli 2025</p>
-              </div>
-            </CardContent>
-          </Card>
+          {/* RIGHT IMAGE */}
+          <div className="relative h-[350px] md:h-[400px] overflow-visible">
+            <div className="absolute top-[-150px] right-[-150px] w-[400px] md:w-[700px] h-[320px] md:h-[400px]">
+              <Image src="/pembelajaran.png" alt="Penerimaan Mahasiswa" fill className="object-cover shadow-xl" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
