@@ -37,7 +37,7 @@ export function DepartmentProfile() {
             {/* Left Content */}
             <div>
               <div>
-                <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-cyan-800 border-cyan-200 px-4 py-2 text-sm font-medium">{departmentProfile.badge}</Badge>
+                <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-[#212F4D] border-cyan-200 px-4 py-2 text-sm font-bold">{departmentProfile.badge}</Badge>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">{departmentProfile.title}</h2>

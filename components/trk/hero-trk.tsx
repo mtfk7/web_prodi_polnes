@@ -64,7 +64,7 @@ export function Hero() {
               />
             ))}
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-800/85 via-cyan-900/75 to-emerald-900/85 z-20" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#212F4D]/85 via[#212F4D]/75 to-[#212F4D]/85 z-20" />
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-black/30 z-30" />
           </>
@@ -164,7 +164,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-cyan-700 text-white hover:bg-cyan-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+              className="bg-[#212F4D]-700 text-white hover:bg-[#212F4D]-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
             >
               <Link href="#cara-mendaftar">
                 Cara Mendaftar

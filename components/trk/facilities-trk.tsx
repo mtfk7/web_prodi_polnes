@@ -48,41 +48,8 @@ export function Facilities() {
   }, []);
 
   return (
-    <section id="fasilitas" className="py-20 bg-gray-50">
+    <section id="fasilitas" className="py-20 bg-white">
       <div className="container px-4 px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <Badge className="mb-4 bg-blue-100 text-blue-800 px-4 py-2 text-sm">Dosen</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tenaga Pengajar Profesional</h2>
-        </div>
-
-        <div className="relative">
-          {/* Tombol scroll kiri */}
-          <button className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md hover:bg-blue-100 text-gray-600 p-2 rounded-full" onClick={() => scrollBy(-300)}>
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-
-          {/* Tombol scroll kanan */}
-          <button className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md hover:bg-blue-100 text-gray-600 p-2 rounded-full" onClick={() => scrollBy(300)}>
-            <ChevronRight className="h-5 w-5" />
-          </button>
-
-          {/* Container scroll */}
-          <div ref={scrollRef} className="overflow-x-auto pb-4 scroll-smooth scrollbar-hide">
-            <div className="flex gap-6 min-w-max px-1">
-              {lecturers.slice(0, 10).map((lecturer, index) => (
-                <Card key={index} className="min-w-[260px] max-w-[300px] flex-shrink-0 group hover:shadow-xl transition-all duration-300">
-                  <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
-                    <Image src={lecturer.photo} alt={lecturer.name} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <CardHeader>
-                    <CardTitle>{lecturer.name}</CardTitle>
-                    <CardDescription>{lecturer.position}</CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Bagian Fasilitas */}
         <div className="max-w-6xl mx-auto text-center mt-12">

@@ -141,7 +141,7 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled ? "bg-cyan-900/95 shadow-lg backdrop-blur border-b border-cyan-950" : "bg-cyan-900/60 backdrop-blur border-b border-transparent"}
+        ${scrolled ? "bg-[#212F4D] shadow-lg backdrop-blur border-b border-[#212F4D] " : "bg-[#212F4D]  backdrop-blur border-b border-transparent"}
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
         transition-transform
       `}
@@ -149,7 +149,7 @@ export function Header() {
      <div className="container mx-auto flex h-20 items-center justify-between px-6">
         {/* Logo & Title */}
         <Link href="/" className="flex items-center gap-3 min-w-max">
-          <Image src="/logo-polnes.png" alt="Logo Polnes" width={140} height={140} className="h-15 w-15 object-contain" priority />
+          <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-15 w-15 object-contain" priority />
         </Link>
 
         {/* Desktop Navigation */}
@@ -184,7 +184,7 @@ export function Header() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between w-full p-3 hover:bg-cyan-50 transition-colors cursor-pointer"
+                    className="flex items-center justify-between w-full p-3 hover:bg-[#212F4D]-50 transition-colors cursor-pointer"
                   >
                     <div className="flex-1">
                       <div className="font-medium text-gray-900">{item.name}</div>
@@ -212,7 +212,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-white hover:bg-cyan-800 focus:bg-cyan-800"
+            className="md:hidden text-white hover:bg-[#212F4D]-800 focus:bg-[#212F4D]-800"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
@@ -222,7 +222,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t bg-cyan-900/95 backdrop-blur animate-slide-down">
+        <div className="md:hidden border-t bg-[#212F4D]-900/95 backdrop-blur animate-slide-down">
           <div className="container px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (

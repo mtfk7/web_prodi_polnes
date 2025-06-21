@@ -1,46 +1,65 @@
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Award } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import Image from 'next/image';
-import { programsData } from '@/data/trk/programs';
 
 export function HowToApply() {
   return (
-    <section id="cara-mendaftar" className="relative bg-[#212F4D] py-8 text-white overflow-visible mt-20">
-      <div className="container px-0 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          {/* LEFT TEXT */}
-          <div className="px-8 md:px-16 py-8 z-20 relative">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Jalur Pendaftaran</h2>
-            <p className="text-white/90 text-lg mb-8 max-w-lg">Informasi jalur penerimaan mahasiswa, serta pendaftaran online calon mahasiswa baru selengkapnya dapat diakses melalui tautan-tautan berikut.</p>
-
-            <ul className="mb-8 space-y-3 text-white/90 text-lg font-medium">
-              <li className="flex items-start gap-2 pt-1">
-                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
-                Jalur SNBP (Seleksi Nasional Berdasarkan Prestasi)
-              </li>
-              <li className="flex items-start gap-2 pt-1">
-                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
-                Jalur SNBT (Seleksi Nasional Berdasarkan Tes)
-              </li>
-              <li className="flex items-start gap-2 pt-1">
-                <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
-                Jalur Mandiri Polnes
-              </li>
-            </ul>
-
-            <Link href="https://pmb.polnes.ac.id/" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white text-purple-600 hover:bg-gray-200 font-bold text-lg">Daftar Sekarang</Button>
-            </Link>
-
-            <p className="text-sm text-white/60 mt-4">Batas akhir pendaftaran: 31 Juli 2025</p>
-          </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="relative h-[350px] md:h-[400px] overflow-visible">
-            <div className="absolute top-[-150px] right-[-150px] w-[400px] md:w-[700px] h-[320px] md:h-[400px]">
-              <Image src="/pembelajaran.png" alt="Penerimaan Mahasiswa" fill className="object-cover shadow-xl" />
+    <section id="cara-mendaftar" className="relative bg-[#212F4D] py-20 text-white overflow-hidden">
+      <div className="container px-4 relative z-10">
+        <div className="max-w-7xl mx-auto">
+                <div className="text-center">
+                <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-[#212F4D] border-cyan-200 px-4 py-2 text-sm font-bold">Pendaftaran</Badge>
+              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      
+            {/* Right Image Section */}
+            <div className="relative">
+              <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <Image src="/apply.jpeg" alt="Penerimaan Mahasiswa" fill className="object-cover transition-transform duration-700 hover:scale-110" priority />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              </div>
+              
+              {/* Card on image */}
+              <div className="absolute -bottom-6 left-1/2 w-max -translate-x-1/2 sm:left-[-1.5rem] sm:translate-x-0 bg-white/90 backdrop-blur-md shadow-2xl border border-[#11418B]/30 rounded-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-white/90 opacity-70" />
+                <div className="p-4 relative z-10 flex items-center gap-3">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-white rounded-2xl blur opacity-30" />
+                    <div className="relative bg-gradient-to-br from-[#212F4D]  to-[#164c61] p-3 rounded-xl">
+                      <Award className="h-6 w-6 text-white" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-sm text-[#212F4D] mb-0.5">Pendaftaran Dibuka</div>
+                    <div className="text-base font-bold text-[#212F4D]">2024/2025</div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+            {/* Left Content */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">Jalur Pendaftaran</h2>
+              <p className="text-white/90 mb-8 leading-relaxed text-lg max-w-lg">Informasi jalur penerimaan mahasiswa, serta pendaftaran online calon mahasiswa baru selengkapnya dapat diakses melalui tautan-tautan berikut.</p>
+              <ul className="mb-8 space-y-3 text-white/90 text-lg font-medium">
+                <li className="flex items-start gap-2 pt-1">
+                  <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                  Jalur SNBP (Seleksi Nasional Berdasarkan Prestasi)
+                </li>
+                <li className="flex items-start gap-2 pt-1">
+                  <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                  Jalur SNBT (Seleksi Nasional Berdasarkan Tes)
+                </li>
+                <li className="flex items-start gap-2 pt-1">
+                  <CheckCircle className="h-5 w-5 text-green-400 mt-1" />
+                  Jalur Mandiri Polnes
+                </li>
+              </ul>
+              <Link href="https://pmb.polnes.ac.id/" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-white text-[#212F4D] rounded-2xl hover:bg-gray-200 font-bold text-lg shadow-lg">Daftar Sekarang</Button>
+              </Link>
+              <p className="text-sm text-white/60 mt-4">Batas akhir pendaftaran: 31 Juli 2025</p>
             </div>
           </div>
         </div>
