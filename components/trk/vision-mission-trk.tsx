@@ -1,11 +1,12 @@
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Eye, Target, Star } from "lucide-react"
-import { visionMission } from "@/data/trk/content"
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Eye, Target, Star } from 'lucide-react';
+import { visionMission } from '@/data/trk/content';
+import { Dot } from 'lucide-react';
 
 export function VisionMission() {
   return (
-     <section id="visi-dan-misi" className="py-20 bg-gradient-to-br from-cyan-700 to-cyan-900">
+    <section id="visi-dan-misi" className="py-20 bg-gradient-to-br from-cyan-700 to-cyan-900">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -36,7 +37,7 @@ export function VisionMission() {
                 <ul className="space-y-3 text-cyan-100">
                   {visionMission.mission.items.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <Star className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                      <Dot className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -47,5 +48,5 @@ export function VisionMission() {
         </div>
       </div>
     </section>
-  )
+  );
 }
