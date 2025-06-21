@@ -13,7 +13,6 @@ import Head from "next/head"
 
 export default function HomePage() {
   // Tambahkan delay 2 detik untuk uji loading
-  // await new Promise((resolve) => setTimeout(resolve, 40));
   return (
     <>
       <Head>

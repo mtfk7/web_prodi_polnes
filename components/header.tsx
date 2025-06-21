@@ -9,7 +9,7 @@ import Image from "next/image"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 const navigation = [
-  { name: "Beranda", href: "/" },
+  { name: "Beranda", href: "#" },
   { name: "Tentang", href: "#tentang-jurusan" },
   { name: "Kontak", href: "#kontak" },
 ]
@@ -41,17 +41,17 @@ const more = [
   {
     name: "Struktur Organisasi",
     href: "#struktur-organisasi",
-    description: "Platform pembelajaran online",
+    description: "Struktur Organisasi Jurusan TI",
   },
   {
     name: "Staf dan Dosen",
     href: "#staf-dan-dosen",
-    description: "Portal layanan akademik",
+    description: "Daftar Staf dan Dosen Jurusan TI",
   },
     {
     name: "Berita",
     href: "#berita",
-    description: "Portal berita jurusan",
+    description: "Portal berita Jurusan TI",
   },
 ]
 const quickAccess = [
@@ -179,7 +179,7 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         {/* Logo & Title */}
         <Link href="/" className="flex items-center gap-3 min-w-max">
-          <Image src="/logo-polnes.png" alt="Logo Polnes" width={40} height={40} className="h-40 w-40 object-contain" />
+          <Image src="/logo-polnes.png" alt="Logo Polnes" width={140} height={140} className="h-15 w-15 object-contain" priority />
         </Link>
 
         {/* Desktop Navigation */}
