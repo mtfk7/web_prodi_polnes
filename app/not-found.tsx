@@ -23,7 +23,7 @@ export default function NotFound() {
         </Button>
       </div>
       <p className="mt-8 text-sm text-green-600">
-        Teknik Informatika Multimedia - Politeknik Negeri Samarinda
+        Jurusan Teknologi Informasi - Politeknik Negeri Samarinda
       </p>
     </div>
   );
