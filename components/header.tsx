@@ -55,6 +55,11 @@ const more = [
   },
 ]
 const quickAccess = [
+        {
+    name: "SIAKAD POLNES",
+    href: "https://siakad.polnes.ac.id",
+    description: "Sistem Informasi Akademik"
+  },
   {
     name: "E-Learning POLNES",
     href: "https://elearning.polnes.ac.id",

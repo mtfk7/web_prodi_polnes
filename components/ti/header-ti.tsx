@@ -25,6 +25,11 @@ const navigation = [
 ]
 
 const quickAccess = [
+    {
+    name: "SIAKAD POLNES",
+    href: "https://siakad.polnes.ac.id",
+    description: "Sistem Informasi Akademik"
+  },
   {
     name: "E-Learning POLNES",
     href: "https://elearning.polnes.ac.id",
@@ -217,7 +222,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t bg-red-900/95 backdrop-blur animate-slide-down">
+        <div className="md:hidden border-t bg-emerald-900/95 backdrop-blur animate-slide-down">
           <div className="container px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
