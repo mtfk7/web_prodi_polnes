@@ -8,7 +8,9 @@ import { JurusanNews } from "@/components/jurusan-news"
 import { StrukturOrganisasi } from "@/components/struktur-organisasi"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
-import { HowToApply } from "@/components/how-to-apply"
+import { HowToApply } from "@/components/jurusan-how-to-apply"
+import { VisionMission } from "@/components/jurusan-vision-mission"
+import { LecturersJurusan } from "@/components/jurusan-lecturers"
 import Head from "next/head"
 
 export default function HomePage() {
@@ -21,11 +23,13 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <Header />
         <JurusanHero />
+        <VisionMission/>
         <ProgramStudiOverview />
         <JurusanProfile />
         <JurusanFacilities />
         <JurusanAchievements />
         <StrukturOrganisasi />
+        <LecturersJurusan />
         <JurusanNews />
         <HowToApply/>
         <Footer />

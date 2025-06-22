@@ -93,7 +93,7 @@ export function JurusanHero() {
             <Image src="/logo-polnes2.png" alt="Logo Polnes 2" width={80} height={80} className="object-contain" />
             <Image src="/logo-ti.png" alt="Logo TI" width={80} height={80} className="object-contain" />
           </div>
-          <Badge className="mb-6 bg-amber-400 text-black hover:bg-amber-300 shadow-lg">
+          <Badge className="font-bold text-sm mb-6 bg-amber-400 py-2 px-4 text-gray-900 hover:bg-amber-300 shadow-lg">
             Politeknik Negeri Samarinda
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">

@@ -44,10 +44,10 @@ const news = [
 
 export function JurusanNews() {
   return (
-    <section className="py-20 bg-white-100">
+    <section className="py-20 bg-green-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-green-100 text-green-800">Berita & Kegiatan</Badge>
+          <Badge className="mb-4 py-2 text-sm px-4 bg-green-100 text-green-800">Berita & Kegiatan</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Berita Terkini</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Update terbaru tentang kegiatan, prestasi, dan perkembangan Jurusan Teknologi Informasi
@@ -97,7 +97,7 @@ export function JurusanNews() {
           <Button
             asChild
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800"
           >
             <Link href="/berita">Lihat Semua Berita</Link>
           </Button>
