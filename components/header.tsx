@@ -303,7 +303,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-white hover:bg-green-800 focus:bg-green-800"
+            className="hover:text-white md:hidden text-white hover:bg-green-700 focus:bg-green-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}

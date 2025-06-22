@@ -212,7 +212,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-white hover:bg-[#212F4D]-800 focus:bg-[#212F4D]-800"
+            className="md:hidden hover:text-white text-white hover:bg-[#212F4D]-800 focus:bg-[#212F4D]-800"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
