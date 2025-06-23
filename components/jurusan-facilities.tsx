@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Monitor, Wifi, Database, Cpu, Globe, Shield } from "lucide-react"
+import { Monitor, Wifi, Database, Cpu, Globe, Shield, ParkingCircle, Presentation} from "lucide-react"
 import Image from "next/image"
 
 const facilities = [
@@ -33,17 +33,17 @@ const facilities = [
     color: "text-orange-700",
   },
   {
-    title: "Laboratorium Web Development",
-    description: "Studio untuk pengembangan aplikasi web dan mobile",
-    image: "/lab-web.png?height=200&width=400",
-    icon: Globe,
+    title: "Ruang Aula Lantai 4",
+description: "Terletak di lantai 4 gedung Jurusan Teknologi Informasi, aula ini digunakan untuk berbagai kegiatan akademik dan non-akademik seperti seminar, workshop, sidang, hingga acara internal kampus. Dilengkapi dengan proyektor, sound system, dan kapasitas yang cukup luas, ruang ini menjadi salah satu fasilitas penting di jurusan.",
+    image: "/fasilitas/aula.jpg?height=200&width=400",
+icon: Presentation,
     color: "text-teal-700",
   },
   {
-    title: "Laboratorium Cyber Security",
-    description: "Lab untuk pembelajaran keamanan siber dan ethical hacking",
-    image: "/lab-security.png?height=200&width=400",
-    icon: Shield,
+    title: "Lahan Parkir yang Luas",
+    description: "Lahan parkir di Jurusan memiliki kapasitas yang cukup untuk menampung kendaraan roda dua maupun roda empat. Area ini terletak dekat dengan gedung utama, memudahkan akses bagi mahasiswa, dosen, dan tamu.",
+    image: "/fasilitas/parkir.jpg?height=200&width=400",
+    icon: ParkingCircle,
     color: "text-red-700",
   },
 ]

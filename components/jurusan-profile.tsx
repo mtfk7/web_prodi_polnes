@@ -6,7 +6,7 @@ import Image from "next/image"
 const jurusanStats = [
   { icon: Users, value: "2000+", label: "Total Mahasiswa", color: "text-blue-600" },
   { icon: GraduationCap, value: "5000+", label: "Total Lulusan", color: "text-green-600" },
-  { icon: Award, value: "25+", label: "Dosen Berpengalaman", color: "text-purple-600" },
+  { icon: Award, value: "35+", label: "Dosen Berpengalaman", color: "text-purple-600" },
   { icon: Building, value: "4", label: "Program Studi", color: "text-orange-600" },
 ]
 

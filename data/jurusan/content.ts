@@ -116,9 +116,9 @@ export const facilities = [
     icon: 'Building2',
   },
   {
-    title: 'Ruang Baca',
-    description: 'Ruang baca yang memiliki berbagai koleksi buku terbaru',
-    image: '/fasiitas1.png?height=200&width=400',
+    title: 'Lahan Parkir Luas',
+    description: 'Lahan Parkir Jurusan luas',
+    image: '/fasilitas/parkir.jpg?height=200&width=400',
     icon: 'Book',
   },
   {

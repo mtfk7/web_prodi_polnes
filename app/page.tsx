@@ -11,6 +11,7 @@ import { BackToTop } from "@/components/back-to-top"
 import { HowToApply } from "@/components/jurusan-how-to-apply"
 import { VisionMission } from "@/components/jurusan-vision-mission"
 import { LecturersJurusan } from "@/components/jurusan-lecturers"
+
 import Head from "next/head"
 
 export default function HomePage() {
