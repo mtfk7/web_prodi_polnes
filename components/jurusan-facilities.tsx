@@ -1,34 +1,41 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Monitor, Wifi, Database, Cpu, Globe, Shield, ParkingCircle, Presentation} from "lucide-react"
+import { Monitor, Wifi, Database, Cpu, Globe, Shield, ParkingCircle, Presentation,Volleyball } from "lucide-react"
 import Image from "next/image"
 
 const facilities = [
   {
-    title: "Laboratorium Komputer",
+    title: "Laboratorium Hardware",
     description: "Lab dengan komputer terbaru dan software development tools lengkap",
     image: "/lab-komputer.png?height=200&width=400",
     icon: Monitor,
     color: "text-blue-700",
   },
   {
-    title: "Laboratorium Jaringan",
+    title: "Laboratorium Software",
     description: "Fasilitas untuk praktik konfigurasi jaringan dan keamanan sistem",
     image: "/lab-jaringan.png?height=200&width=400",
     icon: Wifi,
     color: "text-green-700",
   },
   {
-    title: "Laboratorium Database",
+    title: "Laboratorium Multimedia",
     description: "Lab khusus untuk pembelajaran sistem basis data dan big data",
     image: "/lab-database.png?height=200&width=400",
     icon: Database,
     color: "text-purple-700",
   },
+    {
+  title: "Lapangan Basket & Voli",
+  description: "Jurusan Teknologi Informasi memiliki fasilitas lapangan multifungsi yang dapat digunakan untuk bermain basket maupun voli. Area ini menjadi tempat kegiatan olahraga, pertandingan internal, hingga ajang kebersamaan antar mahasiswa.",
+    image: "/fasilitas/lapangan.jpg?height=200&width=400",
+    icon: Volleyball,
+    color: "text-orange-700",
+  },
   {
-    title: "Laboratorium Hardware",
-    description: "Fasilitas untuk praktik perakitan dan maintenance komputer",
-    image: "/lab-hardware.png?height=200&width=400",
+    title: "Lift Gedung",
+    description: "Gedung 4 lantai Jurusan Teknologi Informasi dilengkapi dengan fasilitas lift untuk memudahkan mobilitas mahasiswa, dosen, dan tamu.",
+    image: "/fasilitas/lift.jpg?height=200&width=400",
     icon: Cpu,
     color: "text-orange-700",
   },
@@ -66,12 +73,15 @@ export function JurusanFacilities() {
             return (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
+            {/* Dark Overlay for better text readability */}
+               <div className="absolute inset-0 bg-black/20 z-20" />
                   <Image
                     src={facility.image || "/placeholder.svg"}
                     alt={facility.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+
                 </div>
                 <CardHeader>
                   <div className="flex items-center gap-3">
@@ -85,6 +95,7 @@ export function JurusanFacilities() {
               </Card>
             )
           })}
+        
         </div>
       </div>
     </section>

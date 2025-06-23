@@ -6,7 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "start:prod:windows":"pm2 start node --name nextjs-app -- ./node_modules/next/dist/bin/next start",
+    "start:prod:linux":"pm2 start --name nextjs-app -- run start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

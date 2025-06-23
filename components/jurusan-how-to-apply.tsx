@@ -57,7 +57,7 @@ export function HowToApply() {
                 </li>
               </ul>
               <Link href="https://pmb.polnes.ac.id/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-white text-green-700 rounded-2xl hover:text-green-800 hover:bg-gray-200 font-bold text-lg shadow-lg">Daftar Sekarang</Button>
+           <Button className="bg-white text-green-700 rounded-2xl hover:text-green-700 hover:bg-gray-100 hover:scale-105 font-bold text-lg shadow-lg transition-transform duration-200">Daftar Sekarang</Button>
               </Link>
               <p className="text-sm text-white/60 mt-4">Batas akhir pendaftaran: 31 Juli 2025</p>
             </div>

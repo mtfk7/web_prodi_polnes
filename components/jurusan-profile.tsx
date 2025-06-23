@@ -4,8 +4,8 @@ import { Users, GraduationCap, Award, Building } from "lucide-react"
 import Image from "next/image"
 
 const jurusanStats = [
-  { icon: Users, value: "2000+", label: "Total Mahasiswa", color: "text-blue-600" },
-  { icon: GraduationCap, value: "5000+", label: "Total Lulusan", color: "text-green-600" },
+  { icon: Users, value: "1000+", label: "Total Mahasiswa Aktif", color: "text-blue-600" },
+  { icon: GraduationCap, value: "3000+", label: "Total Lulusan", color: "text-green-600" },
   { icon: Award, value: "35+", label: "Dosen Berpengalaman", color: "text-purple-600" },
   { icon: Building, value: "4", label: "Program Studi", color: "text-orange-600" },
 ]
@@ -62,7 +62,7 @@ export function JurusanProfile() {
                   <div className="flex items-center gap-3">
                     <Award className="h-8 w-8 text-blue-700" />
                     <div>
-                      <div className="font-semibold text-gray-900">Akreditasi</div>
+                      <div className="font-semibold text-gray-900">Akreditasi BAN-PT</div>
                       <div className="text-2xl font-bold text-blue-700">Baik</div>
                     </div>
                   </div>

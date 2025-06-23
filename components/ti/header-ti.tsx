@@ -146,7 +146,7 @@ export function Header() {
         transition-transform
       `}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-6">
+      <div className="w-full max-w-7xl mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo & Title */}
         <Link href="/" className="flex items-center gap-3 min-w-max">
         <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-8 w-40 object-contain" priority />
