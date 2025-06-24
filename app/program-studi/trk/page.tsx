@@ -3,7 +3,6 @@ import { Hero } from '@/components/trk/hero-trk';
 import { ProgramHighlights } from '@/components/trk/program-highlights-trk';
 import { VisionMission } from '@/components/trk/vision-mission-trk';
 import { DepartmentProfile } from '@/components/trk/department-profile-trk';
-import { Facilities } from '@/components/trk/facilities-trk';
 import { LecturesTrk } from '@/components/trk/lectures-trk';
 import { Achievements } from '@/components/trk/achievements-trk';
 import { SupportedBy } from '@/components/trk/supported-by-trk';
@@ -27,8 +26,7 @@ export default function HomePage() {
         <VisionMission />
         <ProgramHighlights />
         <LecturesTrk />
-        <Facilities />
-        <Achievements />
+                <Achievements />
         <StudentProjects />
         <HowToApply />
         <Footer />

@@ -60,64 +60,7 @@ export function ExploreProgramsContent() {
         </div>
       </section>
 
-      {/* Specializations */}
-      <section className="py-20 bg-white-100">
-        <div className="container px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-cyan-100 text-cyan-800 px-4 py-2 text-sm">Peminatan</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilih Jalur Anda</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">Spesialisasi di bidang yang Anda minati dan menjadi ahli di bidang pilihan Anda</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {programsData.specializations.map((spec, index) => {
-                const IconComponent = iconMap[spec.icon as keyof typeof iconMap];
-                return (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300">
-                    <CardHeader>
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="p-3 bg-gradient-to-br from-cyan-600 to-emerald-700 rounded-lg">
-                          <IconComponent className="h-6 w-6 text-white" />
-                        </div>
-                        <CardTitle className="text-xl">{spec.title}</CardTitle>
-                      </div>
-                      <CardDescription className="text-base">{spec.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="font-semibold text-gray-900 mb-2">Keterampilan Utama:</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {spec.skills.map((skill, skillIndex) => (
-                              <Badge key={skillIndex} variant="secondary">
-                                {skill}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-gray-900 mb-2">Peluang Karir:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            {spec.careerPaths.map((career, careerIndex) => (
-                              <li key={careerIndex} className="flex items-center gap-2">
-                                <CheckCircle className="h-4 w-4 text-cyan-500" />
-                                {career}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Curriculum */}
+            {/* Curriculum */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">

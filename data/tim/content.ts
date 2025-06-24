@@ -1,3 +1,5 @@
+import { GraduationCap } from "lucide-react"
+
 export const siteConfig = {
   name: "POLNES",
   title: "D4 Teknik Informatika Multimedia",
@@ -93,7 +95,7 @@ export const departmentProfile = {
   description:
     "Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.",
   stats: [
-    { value: "1000+", label: "Lulusan", color: "text-blue-600" },
+    { value: "1000+", label: "Lulusan", color: "text-blue-600",icon:GraduationCap },
     { value: "10+", label: "Dosen Aktif", color: "text-blue-600" },
     { value: "3+", label: "Tahun Pengalaman", color: "text-blue-600" },
     { value: "400+", label: "Mahasiswa Aktif", color: "text-blue-600" },

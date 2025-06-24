@@ -42,7 +42,7 @@ export function LecturesTrk() {
   return (
     <section id="staf-dan-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
-        <Badge className="hover:bg-green-200 mb-4 bg-green-100 text-green-800 border-green-200 px-4 py-2 text-sm font-bold shadow-lg">Staf & Dosen</Badge>
+        <Badge className="hover:bg-cyan-200 mb-4 bg-cyan-100 text-cyan-800 px-4 py-2 text-sm">Dosen Prodi TRK</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Tenaga Pengajar Profesional</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -91,7 +91,7 @@ export function LecturesTrk() {
           <Button
             onClick={toggleLecturersView}
             size="lg"
-            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md"
+            className="bg-gradient-to-r from-cyan-700 to-cyan-800 hover:from-cyan-800 hover:to-cyan-900 shadow-md"
           >
             {showAllLecturers ? (
               <>

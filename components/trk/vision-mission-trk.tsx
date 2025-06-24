@@ -2,7 +2,7 @@
 
 import { visionMission } from '@/data/trk/content';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Target } from 'lucide-react';
 
 export function VisionMission() {
   return (
@@ -12,12 +12,14 @@ export function VisionMission() {
           <Badge className="mb-4 bg-gradient-to-r from-indigo-700 to-purple-900 text-white text-base font-semibold px-5 py-2 rounded-full">Visi & Misi</Badge>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Visi */}
+            {/* Visi */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4">Visi</h3>
-            <p className="text-lg leading-relaxed">{visionMission.vision.content}</p>
+            <div className="flex items-start gap-3">
+              <Target className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+              <p className="text-lg leading-relaxed">{visionMission.vision.content}</p>
+            </div>
           </div>
-
           {/* Misi */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4">Misi</h3>
