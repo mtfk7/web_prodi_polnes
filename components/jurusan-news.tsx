@@ -49,10 +49,10 @@ const news = [
 
 export function JurusanNews() {
   return (
-    <section className="py-20 bg-green-50">
+    <section id="berita" className="py-20 bg-green-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 py-2 text-sm px-4 bg-green-100 text-green-800">Berita & Kegiatan</Badge>
+          <Badge className="mb-4 py-2 hover:bg-green-150 px-4 bg-green-200 text-green-600">Berita & Kegiatan</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Berita Terkini</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Update terbaru tentang kegiatan, prestasi, dan perkembangan Jurusan Teknologi Informasi

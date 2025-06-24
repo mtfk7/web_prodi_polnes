@@ -34,10 +34,10 @@ export function ProgramHighlights() {
   }
 
   return (
-    <section id="kurikulum" className="py-20 bg-white">
+    <section id="kurikulum" className="py-20 bg-blue-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-100 text-blue-800">Sorotan Kurikulum</Badge>
+          <Badge className="py-2 px-4 mb-4 bg-blue-100 text-blue-800">Sorotan Kurikulum</Badge>
          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kurikulum Selalu Relevan</h2>
            <p className="text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">Program D4 Teknik Informatika Multimedia menawarkan pengalaman belajar lengkap yang menggabungkan pengetahuan teoretis dengan keterampilan praktis.</p>
         </div>

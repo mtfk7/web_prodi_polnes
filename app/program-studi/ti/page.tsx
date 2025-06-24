@@ -7,7 +7,6 @@ import { Facilities } from "@/components/ti/facilities-ti"
 import { Achievements } from "@/components/ti/achievements-ti"
 import { SupportedBy } from "@/components/ti/supported-by-ti"
 import { StudentProjects } from "@/components/ti/student-projects-ti"
-import { GraduateResults } from "@/components/ti/graduate-results-ti"
 import { HowToApply } from "@/components/ti/how-to-apply-ti"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
@@ -30,7 +29,6 @@ export default function HomePage() {
         
         <StudentProjects />
         <SupportedBy />
-        <GraduateResults />
         <HowToApply />
         <Footer />
         <BackToTop />

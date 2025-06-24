@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { lecturers } from '@/data/jurusan/lecturers';
+import { lecturers } from '@/data/trk/lecturers';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-export function LecturersJurusan() {
+export function LecturesTrk() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -40,9 +40,9 @@ export function LecturersJurusan() {
   };
 
   return (
-    <section id="daftar-dosen" className="py-20 bg-white relative overflow-hidden">
+    <section id="staf-dan-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
-        <Badge className="hover:bg-green-200 mb-4 bg-green-200 text-green-600 border-green-200 px-4 py-2 shadow-lg">Daftar Dosen</Badge>
+        <Badge className="hover:bg-green-200 mb-4 bg-green-100 text-green-800 border-green-200 px-4 py-2 text-sm font-bold shadow-lg">Staf & Dosen</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Tenaga Pengajar Profesional</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">

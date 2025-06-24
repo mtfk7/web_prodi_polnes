@@ -49,10 +49,10 @@ const achievements = [
 
 export function JurusanAchievements() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-green-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-amber-100 text-amber-800">Prestasi & Pencapaian</Badge>
+          <Badge className="py-2 px-4 mb-4 bg-green-200 text-green-600">Prestasi & Pencapaian</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Prestasi yang Membanggakan</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Berbagai penghargaan dan pencapaian yang membuktikan kualitas pendidikan kami

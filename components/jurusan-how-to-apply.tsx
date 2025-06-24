@@ -10,7 +10,7 @@ export function HowToApply() {
       <div className="container px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
                 <div className="text-center">
-                <Badge className="mb-4 bg-amber-400 px-4 py-2 text-gray-900 text-sm font-bold shadow-lg hover:bg-amber-300 hover:text-gray-800">Pendaftaran</Badge>
+                <Badge className="mb-4 bg-white px-4 py-2 text-green-600 shadow-lg hover:bg-gray-100 hover:text-green-600">Pendaftaran</Badge>
               </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       

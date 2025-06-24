@@ -65,7 +65,7 @@ export function ProgramStudiOverview() {
     <section id="program-studi" className="py-20 bg-green-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-100 text-blue-800">Program Studi</Badge>
+          <Badge className="py-2 px-4 mb-4 bg-green-200 text-green-600 hover:text-green-700 hover:bg-green-300">Program Studi</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Program Studi Unggulan</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Jurusan Teknologi Informasi menawarkan 4 program studi yang dirancang untuk memenuhi kebutuhan industri

@@ -209,29 +209,6 @@ export const studentProjects = [
   },
 ];
 
-export const graduateResults = [
-  {
-    icon: 'Briefcase',
-    value: '95%',
-    label: 'Tingkat Penyerapan Kerja',
-  },
-  {
-    icon: 'TrendingUp',
-    value: '85%',
-    label: 'Bekerja di Industri Teknologi',
-  },
-  {
-    icon: 'Building2',
-    value: '50+',
-    label: 'Perusahaan Mitra',
-  },
-  {
-    icon: 'Star',
-    value: '4.8/5',
-    label: 'Kepuasan Industri',
-  },
-];
-
 export const contactInfo = {
   address: {
     street: 'Jl. Ciptomangunkusumo, Kampus Gunung Lipan',

@@ -32,12 +32,12 @@ export function BackToTop() {
       onClick={scrollToTop}
       size="icon"
       aria-label="Back to top"
-      className={`fixed bottom-8 right-8 z-50 bg-gradient-to-r from-green-700 to-green-900 hover:from-green-800 hover:to-green-950 shadow-lg hover:shadow-xl
+      className={`fixed bottom-8 right-8 z-50 bg-gradient-to-r from-yellow-400 to-yellow-400 hover:from-yellow-500 hover:to-yellow-500 shadow-lg hover:shadow-xl
         transition-all duration-500 ease-in-out
         ${isVisible ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-90 pointer-events-none'}
       `}
     >
-      <ArrowUp className="h-4 w-4" />
+      <ArrowUp className="h-4 w-5 font-bold" />
     </Button>
   )
 }

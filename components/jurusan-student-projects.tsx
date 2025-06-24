@@ -27,7 +27,7 @@ export function StudentProjects() {
   }, [api])
 
   return (
-    <section id="projek-mahasiswa" className="py-20 bg-gray-50">
+    <section id="projek-mahasiswa" className="py-20 bg-white">
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-100 text-blue-700">Proyek Mahasiswa</Badge>

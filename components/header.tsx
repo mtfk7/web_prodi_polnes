@@ -37,7 +37,22 @@ const programStudi = [
   },
 ]
 
-const more = [
+const profil = [
+  {
+    name: "Tentang Jurusan",
+    href: "#tentang-jurusan",
+    description: "Tentang Jurusan TI",
+  },
+  {
+    name: "Visi & Misi",
+    href: "#visi-dan-misi",
+    description: "Visi dan Misi Jurusan TI",
+  },
+    {
+    name: "Fasilitas",
+    href: "#fasilitas",
+    description: "Fasilitas Jurusan TI",
+  },
   {
     name: "Struktur Organisasi",
     href: "#struktur-organisasi",
@@ -45,10 +60,18 @@ const more = [
   },
   {
     name: "Staf dan Dosen",
-    href: "#staf-dan-dosen",
+    href: "#daftar-dosen",
     description: "Daftar Staf dan Dosen Jurusan TI",
   },
-    {
+]
+
+const more = [
+  {
+    name: "Struktur Organisasi",
+    href: "#struktur-organisasi",
+    description: "Struktur Organisasi Jurusan TI",
+  },
+  {
     name: "Berita",
     href: "#berita",
     description: "Portal berita Jurusan TI",
@@ -186,7 +209,6 @@ export function Header() {
         <nav className="hidden md:flex flex-1 justify-center items-center gap-8">
           {/* Beranda */}
           <button
-            key="Beranda"
             onClick={() => handleNavClick("/")}
             className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
           >
@@ -216,18 +238,39 @@ export function Header() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          {/* Tentang */}
+          {/* Profil Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
+                <span>Profil</span>
+                <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="center" className="w-64 bg-white/95 backdrop-blur border-green-200 shadow-xl">
+              {profil.map((item) => (
+                <DropdownMenuItem key={item.name} asChild>
+                  <button
+                    onClick={() => handleNavClick(item.href)}
+                    className="flex flex-col items-start w-full text-left p-3 hover:bg-green-50 transition-colors cursor-pointer"
+                  >
+                    <div className="font-medium text-gray-900">{item.name}</div>
+                    <div className="text-sm text-gray-600 mt-1">{item.description}</div>
+                  </button>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+          {/* Berita */}
           <button
-            key="Tentang"
-            onClick={() => handleNavClick("#tentang-jurusan")}
+            onClick={() => handleNavClick("#berita")}
             className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
           >
-            <span>Tentang</span>
+            <span>Berita</span>
             <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
           </button>
           {/* Kontak */}
           <button
-            key="Kontak"
             onClick={() => handleNavClick("#kontak")}
             className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
           >
@@ -262,31 +305,6 @@ export function Header() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          {/* More Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
-                <span>More</span>
-                <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="center" className="w-64 bg-white/95 backdrop-blur border-green-200 shadow-xl">
-              {more.map((item) => (
-                <DropdownMenuItem key={item.name} asChild>
-                  <a
-                    href={item.href}
-                    className="flex items-center justify-between w-full p-3 hover:bg-green-50 transition-colors cursor-pointer"
-                  >
-                    <div className="flex-1">
-                      <div className="font-medium text-gray-900">{item.name}</div>
-                      <div className="text-sm text-gray-600">{item.description}</div>
-                    </div>
-                  </a>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
         </nav>
 
         {/* Apply Now Button */}
@@ -316,15 +334,13 @@ export function Header() {
         <div className="md:hidden border-t bg-green-900/95 backdrop-blur animate-slide-down">
           <div className="container px-4 py-2">
             <nav className="flex flex-col space-y-2">
-              {navigation.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => handleNavClick(item.href)}
-                  className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
-                >
-                  {item.name}
-                </button>
-              ))}
+              <button
+                key="Beranda"
+                onClick={() => handleNavClick("/")}
+                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
+              >
+                Beranda
+              </button>
 
               {/* Mobile Program Studi */}
               <div className="space-y-1">
@@ -341,6 +357,35 @@ export function Header() {
                 ))}
               </div>
 
+              {/* Mobile Profil */}
+              <div className="space-y-1">
+                <div className="text-green-200 font-semibold text-base py-1">Profil</div>
+                {profil.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className="block text-left text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4 w-full"
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </div>
+              
+              <button
+                key="Berita"
+                onClick={() => handleNavClick("#berita")}
+                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
+              >
+                Berita
+              </button>
+              <button
+                key="Kontak"
+                onClick={() => handleNavClick("#kontak")}
+                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
+              >
+                Kontak
+              </button>
+
               {/* Mobile Akses Cepat */}
               <div className="space-y-1">
                 <div className="text-green-200 font-semibold text-base py-1">Akses Cepat</div>
@@ -354,20 +399,6 @@ export function Header() {
                   >
                     {item.name}
                   </a>
-                ))}
-              </div>
-              
-              {/* Mobile More */}
-              <div className="space-y-1">
-                <div className="text-green-200 font-semibold text-base py-1">More</div>
-                {more.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className="block text-left text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4 w-full"
-                  >
-                    {item.name}
-                  </button>
                 ))}
               </div>
 

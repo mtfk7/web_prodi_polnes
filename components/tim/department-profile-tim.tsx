@@ -1,18 +1,18 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Users } from "lucide-react"
+import { Award, Users } from "lucide-react"
 import Image from "next/image"
 import { departmentProfile } from "@/data/tim/content"
 
 export function DepartmentProfile() {
   return (
-    <section id="tentang-kami" className="py-20 bg-gray-50">
+    <section id="tentang-kami" className="py-20 bg-white">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-blue-100 text-blue-800">{departmentProfile.badge}</Badge>
+              <Badge className="hover:bg-blue-200 py-2 px-4 mb-4 bg-blue-100 text-blue-800">Tentang Prodi TIM</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{departmentProfile.title}</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">{departmentProfile.description}</p>
               <div className="grid grid-cols-2 gap-6 mb-8">
@@ -40,10 +40,10 @@ export function DepartmentProfile() {
               <Card className="absolute -bottom-6 -left-6 bg-white shadow-xl">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3">
-                    <Users className="h-8 w-8 text-blue-700" />
+                    <Award className="h-8 w-8 text-blue-700" />
                     <div>
-                      <div className="font-semibold text-gray-900">Mahasiswa Aktif</div>
-                      <div className="text-2xl font-bold text-blue-700">{departmentProfile.activeStudents}</div>
+                      <div className="font-semibold text-gray-900">Akreditasi Prodi BAN-PT</div>
+                      <div className="text-2xl font-bold text-blue-700">Baik</div>
                     </div>
                   </div>
                 </CardContent>

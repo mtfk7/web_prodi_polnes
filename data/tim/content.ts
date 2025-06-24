@@ -8,7 +8,7 @@ export const siteConfig = {
 }
 
 export const heroContent = {
-  badge: "JurusanTeknologi Informasi",
+  badge: "Jurusan Teknologi Informasi",
   title: "D4 Teknik Informatika Multimedia",
   tagline: "Membangun Kreativitas dan Teknologi",
   description:
@@ -94,9 +94,9 @@ export const departmentProfile = {
     "Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.",
   stats: [
     { value: "1000+", label: "Lulusan", color: "text-blue-600" },
-    { value: "10+", label: "Dosen Ahli", color: "text-blue-600" },
-    { value: "7+", label: "Tahun Pengalaman", color: "text-blue-600" },
-    { value: "95%", label: "Tingkat Penyerapan Kerja", color: "text-blue-600" },
+    { value: "10+", label: "Dosen Aktif", color: "text-blue-600" },
+    { value: "3+", label: "Tahun Pengalaman", color: "text-blue-600" },
+    { value: "400+", label: "Mahasiswa Aktif", color: "text-blue-600" },
   ],
   activeStudents: "400+",
   image: "/activestudents.png?height=400&width=600",
@@ -209,29 +209,6 @@ export const studentProjects = [
     type: "Skripsi",
   },
   
-]
-
-export const graduateResults = [
-  {
-    icon: "Briefcase",
-    value: "95%",
-    label: "Tingkat Penyerapan Kerja",
-  },
-  {
-    icon: "TrendingUp",
-    value: "85%",
-    label: "Bekerja di Industri Teknologi",
-  },
-  {
-    icon: "Building2",
-    value: "50+",
-    label: "Perusahaan Mitra",
-  },
-  {
-    icon: "Star",
-    value: "4.8/5",
-    label: "Kepuasan Industri",
-  },
 ]
 
 export const contactInfo = {

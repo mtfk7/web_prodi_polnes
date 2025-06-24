@@ -26,7 +26,7 @@ const testimonials = [
     company: "PT. Desain Desain an",
     avatar: "/placeholder-user.jpg",
     rating: 5,
-    testimonial: "Fasilitas studio yang modern dan dosen yang berpengalaman industri membuat saya siap menghadapi tantangan desain digital yang kompleks.",
+    testimonial: "Fasilitas kelas yang nyaman dan dosen yang berpengalaman industri membuat saya siap menghadapi tantangan desain digital yang kompleks.",
     fromyear:"2021",
     year: "2025"
   },
@@ -72,7 +72,7 @@ const testimonials = [
   }
 ]
 
-export function GraduateResults() {
+export function JurusanTestimoni() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [slideDirection, setSlideDirection] = useState<'left' | 'right' | null>(null)
@@ -127,7 +127,7 @@ export function GraduateResults() {
   const currentTestimonials = testimonials.slice(currentIndex, currentIndex + itemsPerView)
 
   return (
-    <section className="py-20 bg-gradient-to-br from-cyan-700 to-emerald-800">
+    <section className="py-20 bg-gradient-to-br from-green-700 to-emerald-800">
       <style jsx>{`
         .slide-in-from-right {
           animation: slideInFromRight 400ms ease-out forwards;
@@ -185,9 +185,9 @@ export function GraduateResults() {
 
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-white text-cyan-800">Testimoni Alumni</Badge>
+          <Badge className="hover:bg-gray-100 py-2 px-4 mb-4 bg-white text-green-600">Testimoni Alumni</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Apa Kata Alumni Kami</h2>
-          <p className="text-cyan-100 max-w-2xl mx-auto">
+          <p className="text-green-100 max-w-2xl mx-auto">
             Dengarkan pengalaman langsung dari lulusan kami yang telah sukses di industri teknologi
           </p>
         </div>
@@ -233,7 +233,7 @@ export function GraduateResults() {
                   <CardHeader>
                     <div className="flex items-start gap-4 mb-4">
                       <Avatar className="h-12 w-12 border-2 border-white/20 transition-transform duration-300 hover:scale-105">
-                        <AvatarFallback className="bg-cyan-600 text-white font-semibold">
+                        <AvatarFallback className="bg-green-600 text-white font-semibold">
                           {testimonial.name.split(" ").map((n) => n[0]).join("")}
                         </AvatarFallback>
                       </Avatar>
@@ -241,7 +241,7 @@ export function GraduateResults() {
                         <CardTitle className="text-lg font-semibold transition-colors duration-300">
                           {testimonial.name}
                         </CardTitle>
-                        <CardDescription className="text-cyan-200 text-sm transition-colors duration-300">
+                        <CardDescription className="text-green-200 text-sm transition-colors duration-300">
                           {testimonial.position} • {testimonial.company}
                         </CardDescription>
                         <div className="flex items-center gap-1 mt-1">
@@ -256,8 +256,8 @@ export function GraduateResults() {
                     </div>
                     
                     <div className="relative">
-                      <Quote className="h-6 w-6 text-cyan-300 absolute -top-2 -left-2 opacity-50 transition-transform duration-300 hover:scale-100" />
-                      <CardDescription className="text-cyan-100 text-base leading-relaxed pl-4 transition-colors duration-300">
+                      <Quote className="h-6 w-6 text-green-300 absolute -top-2 -left-2 opacity-50 transition-transform duration-300 hover:scale-100" />
+                      <CardDescription className="text-green-100 text-base leading-relaxed pl-4 transition-colors duration-300">
                         "{testimonial.testimonial}"
                       </CardDescription>
                     </div>
@@ -265,13 +265,13 @@ export function GraduateResults() {
                     <div className="mt-4 pt-4 border-t border-white/20">
                                               <Badge
                         variant="outline"
-                        className="text-cyan-200 border-cyan-300/30 transition-all duration-300 hover:bg-cyan-200 hover:text-cyan-800"
+                        className="text-green-200 border-green-300/30 transition-all duration-300 hover:bg-green-200 hover:text-green-800"
                       >
                         Angkatan {testimonial.fromyear}
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="text-cyan-200 border-cyan-300/30 transition-all duration-300 hover:bg-cyan-200 hover:text-cyan-800"
+                        className="text-green-200 border-green-300/30 transition-all duration-300 hover:bg-green-200 hover:text-green-800"
                       >
                         Lulusan {testimonial.year}
                       </Badge>

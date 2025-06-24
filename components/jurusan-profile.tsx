@@ -17,7 +17,7 @@ export function JurusanProfile() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-blue-100 text-blue-800">Tentang Jurusan</Badge>
+              <Badge className="py-2 px-4 mb-4 bg-green-200 text-green-600 hover:text-green-700 hover:bg-green-300">Tentang Jurusan</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Pelopor Pendidikan Teknologi Informasi di Kalimantan Timur
               </h2>
@@ -63,7 +63,7 @@ export function JurusanProfile() {
                     <Award className="h-8 w-8 text-blue-700" />
                     <div>
                       <div className="font-semibold text-gray-900">Akreditasi BAN-PT</div>
-                      <div className="text-2xl font-bold text-blue-700">Baik</div>
+                      <div className="text-2xl font-bold text-blue-700">Baik Sekali</div>
                     </div>
                   </div>
                 </CardContent>

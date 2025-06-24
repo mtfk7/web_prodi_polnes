@@ -163,6 +163,11 @@ export const lecturers = [
     position: "Dosen Jurusan TI",
     photo: "/dosen/taufiq.jpg",
   },
+        {
+    name: "M. Bagus Bintang Timur, S.Kom",
+    position: "Dosen Jurusan TI",
+    photo: "/dosen/irwansyah.jpg",
+  },
   {
     name: "Noor Alam Hadiwijaya, ST., M.Cs.",
     position: "Dosen Jurusan TI",
@@ -193,9 +198,5 @@ export const lecturers = [
     position: "Dosen Jurusan TI",
     photo: "/dosen/yusni.jpg",
   },
-  {
-    name: "Suryady Sujono",
-    position: "Dosen Jurusan TI 3D",
-    photo: "/dosen/suryady.jpg",
-  },
+
 ]

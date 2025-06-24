@@ -57,10 +57,10 @@ icon: Presentation,
 
 export function JurusanFacilities() {
   return (
-    <section className="py-20 bg-green-50">
+    <section id="fasilitas" className="py-20 bg-white">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-100 text-blue-800">Fasilitas</Badge>
+          <Badge className="py-2 px-4 mb-4 bg-green-200 text-green-600">Fasilitas Jurusan</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fasilitas Pembelajaran Modern</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Laboratorium dan fasilitas berstandar industri untuk mendukung pembelajaran praktis

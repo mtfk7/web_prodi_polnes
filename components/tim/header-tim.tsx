@@ -16,11 +16,11 @@ import {
 
 const navigation = [
   { name: "Beranda", href: "/" },
-  { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Tentang", href: "#tentang-kami" },
+  { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Kurikulum", href: "#kurikulum" },
-  { name: "Fasilitas", href: "#fasilitas" },
-  // { name: "Projek", href: "#projek-mahasiswa" },
+  { name: "Daftar Dosen", href: "#daftar-dosen-tim" },
+  
   { name: "Kontak", href: "#kontak" },
 ]
 

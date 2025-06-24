@@ -5,9 +5,10 @@ import { VisionMission } from "@/components/tim/vision-mission-tim"
 import { DepartmentProfile } from "@/components/tim/department-profile-tim"
 import { Facilities } from "@/components/tim/facilities-tim"
 import { Achievements } from "@/components/tim/achievements-tim"
+import { LecturesTim } from "@/components/tim/lectures-tim"
 import { SupportedBy } from "@/components/tim/supported-by-tim"
-import { StudentProjects } from "@/components/tim/student-projects-tim"
-import { GraduateResults } from "@/components/tim/graduate-results-tim"
+
+
 import { HowToApply } from "@/components/tim/how-to-apply-tim"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
@@ -22,15 +23,13 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
-        <VisionMission />
         <DepartmentProfile />
+        <VisionMission />
         <ProgramHighlights />
-        <Facilities />
+        <LecturesTim />
         <Achievements />
         
-        <StudentProjects />
         <SupportedBy />
-        <GraduateResults />
         <HowToApply />
         <Footer />
         <BackToTop />

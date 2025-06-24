@@ -12,10 +12,10 @@ const iconMap = {
 
 export function Achievements() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-blue-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-amber-200 text-amber-900">Penghargaan & Pencapaian</Badge>
+          <Badge className="py-2 px-4 mb-4 bg-blue-200 text-blue-900">Penghargaan & Pencapaian</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Bertumbuh, Berani, dan Berprestasi</h2>
           {/* <p className="text-gray-600 max-w-2xl mx-auto">
             Our commitment to excellence has been recognized through various awards and certifications

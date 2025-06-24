@@ -7,7 +7,7 @@ import { Facilities } from "@/components/tk/facilities-tk"
 import { Achievements } from "@/components/tk/achievements-tk"
 import { SupportedBy } from "@/components/tk/supported-by-tk"
 import { StudentProjects } from "@/components/tk/student-projects-tk"
-import { GraduateResults } from "@/components/tk/graduate-results-tk"
+
 import { HowToApply } from "@/components/tk/how-to-apply-tk"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
@@ -29,7 +29,6 @@ export default function HomePage() {
         <Achievements /> 
         <StudentProjects />
         <SupportedBy />
-        <GraduateResults />
         <HowToApply />
         <Footer />
         <BackToTop />

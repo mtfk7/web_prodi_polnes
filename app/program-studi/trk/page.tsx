@@ -4,11 +4,11 @@ import { ProgramHighlights } from '@/components/trk/program-highlights-trk';
 import { VisionMission } from '@/components/trk/vision-mission-trk';
 import { DepartmentProfile } from '@/components/trk/department-profile-trk';
 import { Facilities } from '@/components/trk/facilities-trk';
-import { LecturersTrk } from '@/components/trk/lecturers-trk';
+import { LecturesTrk } from '@/components/trk/lectures-trk';
 import { Achievements } from '@/components/trk/achievements-trk';
 import { SupportedBy } from '@/components/trk/supported-by-trk';
 import { StudentProjects } from '@/components/trk/student-projects-trk';
-import { GraduateResults } from '@/components/trk/graduate-results-trk';
+
 import { HowToApply } from '@/components/trk/how-to-apply-trk';
 import { Footer } from '@/components/footer';
 import { BackToTop } from '@/components/back-to-top';
@@ -26,7 +26,7 @@ export default function HomePage() {
         <DepartmentProfile />
         <VisionMission />
         <ProgramHighlights />
-        <LecturersTrk />
+        <LecturesTrk />
         <Facilities />
         <Achievements />
         <StudentProjects />
