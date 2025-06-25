@@ -221,10 +221,10 @@ export const contactInfo = {
   phone: "+62 541 260588",
   email: "info@polnes.ac.id",
   socialMedia: [
-    { name: "Facebook", icon: "Facebook", url: "#" },
-    { name: "Instagram", icon: "Instagram", url: "#" },
-    { name: "Youtube", icon: "Youtube", url: "#" },
-    { name: "Linkedin", icon: "Linkedin", url: "#" },
+    { name: "Polnes", icon: "Earth", url: "https://polnes.ac.id" },
+    { name: "Email", icon: "Mail", url: "mailto:info@polnes.ac.id" },
+    { name: "Instagram", icon: "Instagram", url: "https://www.instagram.com/polnes_campus" },
+    { name: "Youtube", icon: "Youtube", url: "https://www.youtube.com/@PolnesCampus" },
   ],
 }
 

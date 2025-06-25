@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Code2, MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin } from "lucide-react"
+import { Code2, MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin, Earth } from "lucide-react"
 import Link from "next/link"
 import { siteConfig, contactInfo, quickLinks } from "@/data/tim/content"
 
@@ -9,21 +9,23 @@ const iconMap = {
   Instagram,
   Youtube,
   Linkedin,
+  Earth,
+  Mail,
 }
 
 export function Footer() {
   return (
     <footer id="kontak" className="bg-gray-900 text-white">
       <div className="container px-4 py-16">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
-          
+
           <div className="lg:col-span-2">
             <div className="h-40 w-40 relative flex-shrink-0">
               <img src="/logo-polnes.png" alt="Logo Polnes" className="h-full w-full object-contain" />
             </div>
-       
+
             {/* <p className="text-gray-400 mb-6 max-w-md">
               Samarinda State Polytechnic - Building the future of multimedia technology through innovative education
               and creative excellence.
