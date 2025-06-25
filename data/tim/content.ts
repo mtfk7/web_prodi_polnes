@@ -90,12 +90,12 @@ export const visionMission = {
 }
 
 export const departmentProfile = {
-  badge: "Tentang Jurusan",
+  badge: "Tentang Prodi D4 TIM",
   title: "Pelopor Inovasi Pendidikan Informatika Multimedia",
   description:
     "Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.",
   stats: [
-    { value: "1000+", label: "Lulusan", color: "text-blue-600",icon:GraduationCap },
+    { value: "1000+", label: "Lulusan", color: "text-blue-600", icon: GraduationCap },
     { value: "10+", label: "Dosen Aktif", color: "text-blue-600" },
     { value: "3+", label: "Tahun Pengalaman", color: "text-blue-600" },
     { value: "400+", label: "Mahasiswa Aktif", color: "text-blue-600" },
@@ -114,22 +114,22 @@ export const facilities = [
   {
     title: "Lab Multimedia",
     description: "Peralatan produksi video dan audio profesional untuk pembuatan konten multimedia",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Building2",
   },
-    {
+  {
     title: "Ruang Baca",
     description: "Ruang baca yang memiliki berbagai koleksi buku terbaru",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Book",
   },
-      {
+  {
     title: "Masjid",
     description: "Masjid yang luas dan nyaman",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Building",
   },
-  
+
 ]
 
 export const achievements = [
@@ -181,7 +181,7 @@ export const studentProjects = [
     type: "Skripsi",
   },
   {
-  title: "PENERAPAN TEKNIK SINEMATOGRAFI DALAM PEMBUATAN VIDEO PROMOSI DEJAVU BARBERSHOP",
+    title: "PENERAPAN TEKNIK SINEMATOGRAFI DALAM PEMBUATAN VIDEO PROMOSI DEJAVU BARBERSHOP",
     description: "",
     image: "/dejavu.png?height=200&width=400",
     badge: "Aplikasi Mobile",
@@ -200,8 +200,8 @@ export const studentProjects = [
     year: 2024,
     type: "Skripsi",
   },
-    {
-  title: "Rancang Bangun Aplikasi Manajemen Kosan Untuk Usaha Rumah Mulya Berbasis Mobile",
+  {
+    title: "Rancang Bangun Aplikasi Manajemen Kosan Untuk Usaha Rumah Mulya Berbasis Mobile",
     description: "",
     image: "/kos.png?height=200&width=400",
     badge: "Aplikasi Mobile",
@@ -210,7 +210,7 @@ export const studentProjects = [
     year: 2024,
     type: "Skripsi",
   },
-  
+
 ]
 
 export const contactInfo = {
