@@ -99,7 +99,7 @@ export const departmentProfile = {
     { value: "95%", label: "Tingkat Penyerapan Kerja", color: "text-emerald-600" },
   ],
   activeStudents: "400+",
-  image: "/activestudents.png?height=400&width=600",
+  image: "/utama/ti.jpg?height=400&width=600",
 }
 
 export const facilities = [
@@ -112,22 +112,22 @@ export const facilities = [
   {
     title: "Lab Multimedia",
     description: "Peralatan produksi video dan audio profesional untuk pembuatan konten multimedia",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Building2",
   },
-    {
+  {
     title: "Ruang Baca",
     description: "Ruang baca yang memiliki berbagai koleksi buku terbaru",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Book",
   },
-      {
+  {
     title: "Masjid",
     description: "Masjid yang luas dan nyaman",
-     image: "/fasiitas1.png?height=200&width=400",
+    image: "/fasiitas1.png?height=200&width=400",
     icon: "Building",
   },
-  
+
 ]
 
 export const achievements = [
@@ -179,7 +179,7 @@ export const studentProjects = [
     type: "Skripsi",
   },
   {
-  title: "PENERAPAN TEKNIK SINEMATOGRAFI DALAM PEMBUATAN VIDEO PROMOSI DEJAVU BARBERSHOP",
+    title: "PENERAPAN TEKNIK SINEMATOGRAFI DALAM PEMBUATAN VIDEO PROMOSI DEJAVU BARBERSHOP",
     description: "",
     image: "/dejavu.png?height=200&width=400",
     badge: "Aplikasi Mobile",
@@ -198,8 +198,8 @@ export const studentProjects = [
     year: 2024,
     type: "Skripsi",
   },
-    {
-  title: "Rancang Bangun Aplikasi Manajemen Kosan Untuk Usaha Rumah Mulya Berbasis Mobile",
+  {
+    title: "Rancang Bangun Aplikasi Manajemen Kosan Untuk Usaha Rumah Mulya Berbasis Mobile",
     description: "",
     image: "/kos.png?height=200&width=400",
     badge: "Aplikasi Mobile",
@@ -208,7 +208,7 @@ export const studentProjects = [
     year: 2024,
     type: "Skripsi",
   },
-  
+
 ]
 
 
