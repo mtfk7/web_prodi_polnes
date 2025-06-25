@@ -5,7 +5,7 @@ export const lecturers = [
     photo: "/dosen/rheo.jpg",
   },
   {
-    name: "Mulyanto",
+    name: "Mulyanto, S.Kom., M.Cs",
     position: "Sekjur & Dosen Prodi TI",
     photo: "/dosen/mulyanto.jpg",
   },
