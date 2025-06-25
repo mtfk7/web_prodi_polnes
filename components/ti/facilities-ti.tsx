@@ -25,7 +25,7 @@ export function Facilities() {
     <section id="fasilitas" className="py-20 bg-gray-50">
       <div className="container px-4 px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-800">Fasilitas</Badge>
+          <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-emerald-100 text-emerald-800">Fasilitas</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Lingkungan Belajar yang Lengkap</h2>
           {/* <p className="text-gray-600 max-w-2xl mx-auto">
             Our state-of-the-art facilities provide students with the tools they need to excel

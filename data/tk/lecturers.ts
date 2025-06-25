@@ -1,52 +1,47 @@
 export const lecturers = [
-  // Pimpinan
   {
-    name: "Ahmad Rofiq Hakim, S.Pd., M.Kom.",
-    position: "Kaprodi TRK & Dosen Prodi TRK",
-    photo: "/dosen/rofiq.jpg",
-  },
-
-  // Kalab
-  {
-    name: "Agus Triyono, ST, MT",
-    position: "Kalab Hardware & Dosen Prodi TRK",
-    photo: "/dosen/agus.jpg",
-  },
-
-  // Dosen Prodi TRK
-  {
-    name: "Karyo Budi Utomo, S.Kom., M.Eng.",
-    position: "Wakil Direktur 2 POLNES & Dosen Prodi TRK",
-    photo: "/dosen/karyo.jpg",
+    name: "Agusma Wajiansyah, SST., MT.",
+    position: "Kaprodi TK",
+    photo: "/Dosen Prodi TK/agusma.jpg",
   },
   {
-    name: "M. Zainul Rohman, SST., MT.",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/zain.jpg",
+    name: "Ansar Rizal, ST., M.Kom",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/ansar.jpg",
   },
   {
-    name: "Abdullah Hanif, S.Kom, M.Kom",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/abdullah.jpg",
+    name: "Didikus Susilo Budi Utomo, ST., M.Sc",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/didi.jpg",
   },
   {
-    name: "Arsan Kumala Jaya, M.T",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/arsan.jpg",
+    name: "Dwi Titi Maesaroh, S.Pd., M.Pd.",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/dwi.jpg",
   },
   {
-    name: "Fara Triadi, M.T",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/fara.jpg",
+    name: "Fajerin Biabdillah, M.Kom",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/fajerin.jpg",
   },
   {
-    name: "Wahyuni Eka Sari, S.Kom., M.Eng",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/wahyuni.jpg",
+    name: "Hari Purwadi, ST., MT.",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/hari.jpg",
   },
   {
-    name: "Irwansyah, S.Kom, M.Cs",
-    position: "Dosen Prodi TRK",
-    photo: "/dosen/irwansyah.jpg",
+    name: "M. Taufiq Sumadi, S.Tr.Kom, M.Tr.Kom",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/taufiq.jpg",
   },
-]
+  {
+    name: "Rihartanto, ST.",
+    position: "Dosen Prodi TK",
+    photo: "/Dosen Prodi TK/rihartanto.jpg",
+  },
+  {
+    name: "Supriadi, SST., MT.",
+    position: "Kalab Mekatronika",
+    photo: "/Dosen Prodi TK/supriadi.jpg",
+  }
+];

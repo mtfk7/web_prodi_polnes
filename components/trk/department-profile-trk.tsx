@@ -5,29 +5,26 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Award, BookOpen, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
-
 // Mock data - replace with your actual data import
 const departmentProfile = {
-  badge: 'Tentang Kami',
-  title: 'Departemen Teknik Rekayasa Komputer',
+  badge: 'Tentang Prodi TRK',
+  title: 'Prodi D4 Teknologi Rekayasa Komputer',
   description:
     'Kami adalah departemen yang berfokus pada pengembangan teknologi komputer dan rekayasa perangkat lunak. Dengan fasilitas modern dan dosen berpengalaman, kami berkomitmen menghasilkan lulusan yang kompeten dan siap menghadapi tantangan industri teknologi.',
   stats: [
-    { value: '500+', label: 'Mahasiswa', color: 'text-[#164c61]', icon: Users },
-    { value: '25+', label: 'Dosen', color: 'text-[#212f4d]', icon: Award },
-    { value: '15+', label: 'Laboratorium', color: 'text-[#164c61]', icon: BookOpen },
-    { value: '95%', label: 'Tingkat Kelulusan', color: 'text-[#212f4d]', icon: TrendingUp },
+    { value: '400+', label: 'Mahasiswa Aktif', color: 'text-sky-800', icon: Users },
+    { value: '10+', label: 'Dosen Berpengalaman', color: 'text-sky-800', icon: Award },
+    { value: '1000+', label: 'Alumni Berprestasi', color: 'text-sky-800', icon: BookOpen },
   ],
-  image: '/activestudents.png?height=400&width=600',
+  image: '/utama/trk.webp?height=400&width=600',
   activeStudents: '487',
 };
-
 export function DepartmentProfile() {
   return (
-    <section id="tentang-kami" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 relative overflow-hidden">
+    <section id="tentang-kami" className="py-20 bg-gradient-to-br from-blue-50 via-sky-50 to-sky-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-200/30 to-sky-200/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-200/30 to-pink-200/30 rounded-full blur-3xl" />
       </div>
 
@@ -37,7 +34,7 @@ export function DepartmentProfile() {
             {/* Left Content */}
             <div>
               <div>
-                <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-[#212F4D] border-cyan-200 px-4 py-2 text-sm font-bold">{departmentProfile.badge}</Badge>
+                <Badge className="mb-6 bg-gradient-to-r from-sky-100 to-sky-100 text-sky-800 border-sky-200 px-4 py-2 text-sm font-bold">{departmentProfile.badge}</Badge>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">{departmentProfile.title}</h2>
@@ -72,38 +69,31 @@ export function DepartmentProfile() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
                   {/* Floating decorative elements */}
-                  <div className="absolute top-6 right-6 w-4 h-4 bg-cyan-400 rounded-full animate-pulse" />
-                  <div className="absolute top-12 right-12 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300" />
+                  <div className="absolute top-6 right-6 w-4 h-4 bg-sky-400 rounded-full animate-pulse" />
+                  <div className="absolute top-12 right-12 w-2 h-2 bg-sky-400 rounded-full animate-pulse delay-300" />
                 </div>
 
                 {/* Enhanced Active Students Card */}
                 <div>
                   <Card className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-md shadow-2xl border-0 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50 opacity-50" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-sky-50 opacity-50" />
                     <CardContent className="p-8 relative z-10">
                       <div className="flex items-center gap-4">
                         <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-[#164c61] to-[#212f4d] rounded-2xl blur opacity-30" />
-                          <div className="relative bg-gradient-to-br from-[#164c61] to-[#212f4d] p-4 rounded-2xl">
-                            <Users className="h-8 w-8 text-white" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-sky-800 to-[#212f4d] rounded-2xl blur opacity-30" />
+                          <div className="relative bg-gradient-to-br from-sky-600 to-sky-800 p-4 rounded-2xl">
+                            <Award className="h-8 w-8 text-white" />
                           </div>
                         </div>
                         <div>
-                          <div className="font-semibold text-gray-700 mb-1">Mahasiswa Aktif</div>
-                          <div className="text-3xl font-bold bg-gradient-to-r from-[#164c61] to-[#212f4d] bg-clip-text text-transparent">{departmentProfile.activeStudents}</div>
+                          <div className="font-semibold text-gray-700 mb-1">Akreditasi BAN-PT</div>
+                          <div className="text-3xl font-bold bg-gradient-to-r from-sky-800 to-[#212f4d] bg-clip-text text-transparent">Baik</div>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Additional floating card */}
-                <div className="absolute -top-6 -right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/50">
-                  <div className="flex items-center gap-2">
-                    <Award className="h-6 w-6 text-yellow-500" />
-                    <span className="text-sm font-semibold text-gray-700">Terakreditasi A</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

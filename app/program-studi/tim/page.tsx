@@ -28,7 +28,6 @@ export default function HomePage() {
         <ProgramHighlights />
         <LecturesTim />
         <Achievements />
-        
         <SupportedBy />
         <HowToApply />
         <Footer />

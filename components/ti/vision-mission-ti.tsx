@@ -5,11 +5,11 @@ import { visionMission } from "@/data/ti/content"
 
 export function VisionMission() {
   return (
-     <section id="visi-dan-misi" className="py-20 bg-gradient-to-br from-emerald-700 to-emerald-900">
+    <section id="visi-dan-misi" className="py-20 bg-gradient-to-br from-emerald-700 to-emerald-900">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-emerald-400 text-black">Visi & Misi</Badge>
+            <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-white text-emerald-700">Visi & Misi</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Komitmen untuk Menjadi Terbaik</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

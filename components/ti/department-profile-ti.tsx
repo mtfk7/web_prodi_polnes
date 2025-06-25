@@ -7,12 +7,12 @@ import { departmentProfile } from "@/data/ti/content"
 
 export function DepartmentProfile() {
   return (
-    <section id="tentang-kami" className="py-20 bg-gray-50">
+    <section id="tentang-kami" className="py-20 bg-emerald-50">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-emerald-100 text-emerald-800">{departmentProfile.badge}</Badge>
+              <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-emerald-100 text-emerald-800">{departmentProfile.badge}</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{departmentProfile.title}</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">{departmentProfile.description}</p>
               <div className="grid grid-cols-2 gap-6 mb-8">

@@ -30,10 +30,10 @@ export function StudentProjects() {
     <section id="projek-mahasiswa" className="py-20 bg-gray-50">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-700">Proyek Mahasiswa</Badge>
+          <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-emerald-100 text-emerald-700">Proyek Mahasiswa</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Temukan Proyek Inovatif yang Dibuat Oleh Mahasiswa</h2>
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto">
           <Carousel
             setApi={setApi}
@@ -85,9 +85,8 @@ export function StudentProjects() {
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index + 1 === current ? "bg-gray-800 scale-110" : "bg-gray-300 hover:bg-gray-400"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index + 1 === current ? "bg-gray-800 scale-110" : "bg-gray-300 hover:bg-gray-400"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

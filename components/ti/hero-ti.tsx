@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
-import { heroContent } from "@/data/ti/content"
-import { campusImages } from "@/data/ti/content"
+import { heroContent } from "@/data/tim/content"
+import { campusImages } from "@/data/tim/content"
 import { useState, useEffect, useRef } from "react"
 
 export function Hero() {
@@ -31,7 +31,7 @@ export function Hero() {
       setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1))
     }
   }
-  
+
   const nextSlide = () => {
     if (total > 0) {
       setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1))
@@ -85,7 +85,7 @@ export function Hero() {
         )}
       </div>
 
-    
+
       {/* Slider Controls
       {campusImages && campusImages.length > 1 && (
         <>

@@ -5,6 +5,7 @@ import { Code2, Menu, X, ChevronDown, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useState, useEffect } from "react"
+import { siteConfig } from "@/data/tim/content"
 import Image from "next/image"
 import {
   DropdownMenu,
@@ -15,16 +16,16 @@ import {
 
 const navigation = [
   { name: "Beranda", href: "/" },
-  { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Tentang", href: "#tentang-kami" },
+  { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Kurikulum", href: "#kurikulum" },
-  { name: "Fasilitas", href: "#fasilitas" },
-  // { name: "Projek", href: "#projek-mahasiswa" },
+  { name: "Daftar Dosen", href: "#daftar-dosen-tim" },
+
   { name: "Kontak", href: "#kontak" },
 ]
 
 const quickAccess = [
-      {
+  {
     name: "SIAKAD POLNES",
     href: "https://siakad.polnes.ac.id",
     description: "Sistem Informasi Akademik"
@@ -35,13 +36,13 @@ const quickAccess = [
     description: "Platform pembelajaran online"
   },
   {
-    name: "Layanan POLNES", 
+    name: "Layanan POLNES",
     href: "https://layanan.polnes.ac.id",
     description: "Portal layanan akademik"
   },
   {
     name: "E-Perpus Polnes",
-    href: "https://lib.polnes.ac.id", 
+    href: "https://lib.polnes.ac.id",
     description: "Perpustakaan digital"
   }
 ]
@@ -79,7 +80,7 @@ export function Header() {
           // Hitung offset untuk navbar fixed (80px height)
           const navbarHeight = 80
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-          
+
           window.scrollTo({
             top: elementPosition,
             behavior: "smooth"
@@ -103,7 +104,7 @@ export function Header() {
           // Hitung offset untuk navbar fixed (80px height)
           const navbarHeight = 80
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-          
+
           window.scrollTo({
             top: elementPosition,
             behavior: "smooth"
@@ -117,14 +118,14 @@ export function Header() {
     if (href.startsWith("#")) {
       // Update URL dengan hash tanpa reload halaman
       window.history.pushState(null, '', href)
-      
+
       // Smooth scroll for anchor links
       const element = document.querySelector(href)
       if (element) {
         // Hitung offset untuk navbar fixed (80px height)
         const navbarHeight = 80
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-        
+
         window.scrollTo({
           top: elementPosition,
           behavior: "smooth"
@@ -140,7 +141,7 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled ? "bg-teal-500/95 shadow-lg backdrop-blur border-b border-teal-550" : "bg-teal-500/60 backdrop-blur border-b border-transparent"}
+        ${scrolled ? "bg-teal-900/95 shadow-lg backdrop-blur border-b border-teal-950" : "bg-teal-900/60 backdrop-blur border-b border-transparent"}
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
         transition-transform
       `}
@@ -148,7 +149,7 @@ export function Header() {
       <div className="w-full max-w-7xl mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo & Title */}
         <Link href="/" className="flex items-center gap-3 min-w-max">
-         <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-8 w-40 object-contain" priority />
+          <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-8 w-40 object-contain" priority />
         </Link>
 
         {/* Desktop Navigation */}
@@ -157,24 +158,24 @@ export function Header() {
             <button
               key={item.name}
               onClick={() => handleNavClick(item.href)}
-              className="relative text-white hover:text-teal-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
+              className="relative text-teal-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
             >
               <span>{item.name}</span>
-              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-teal-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
             </button>
           ))}
-          
+
           {/* Akses Cepat Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="relative text-teal-100 hover:text-teal-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
+              <button className="relative text-teal-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
                 <span>Akses Cepat</span>
                 <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-teal-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
+                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent 
-              align="center" 
+            <DropdownMenuContent
+              align="center"
               className="w-64 bg-white/95 backdrop-blur border-teal-200 shadow-xl"
             >
               {quickAccess.map((item) => (
@@ -203,7 +204,7 @@ export function Header() {
             href="https://pmb.polnes.ac.id"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-teal-400 text-white font-bold shadow-lg px-6 py-2 hover:bg-teal-300 transition-all duration-200 text-lg hidden md:inline-flex items-center justify-center"
+            className="rounded-full bg-amber-400 text-teal-900 font-bold shadow-lg px-6 py-2 hover:bg-amber-300 transition-all duration-200 text-lg hidden md:inline-flex items-center justify-center"
           >
             Daftar Sekarang
           </a>
@@ -221,19 +222,19 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t bg-teal-900/95 backdrop-blur animate-slide-down">
+        <div className="md:hidden border-t bg-teal-900/60 backdrop-blur animate-slide-down">
           <div className="container px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-left text-white hover:text-teal-400 transition-colors text-lg py-2"
+                  className="text-left text-teal-200 hover:text-amber-400 transition-colors text-lg py-2"
                 >
                   {item.name}
                 </button>
               ))}
-              
+
               {/* Mobile Akses Cepat */}
               <div className="space-y-2">
                 <div className="text-teal-200 font-medium text-lg py-2">Akses Cepat</div>
@@ -243,18 +244,18 @@ export function Header() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-teal-200 hover:text-teal-400 transition-colors text-base py-1 pl-4"
+                    className="block text-teal-200 hover:text-amber-400 transition-colors text-base py-1 pl-4"
                   >
                     {item.name}
                   </a>
                 ))}
               </div>
-              
+
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                className="w-full mt-4 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-teal-900 bg-transparent"
+                className="w-full mt-4 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-teal-900 bg-transparent"
               >
                 <a
                   href="https://pmb.polnes.ac.id"

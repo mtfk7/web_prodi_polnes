@@ -31,7 +31,7 @@ export function Hero() {
       setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1))
     }
   }
-  
+
   const nextSlide = () => {
     if (total > 0) {
       setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1))
@@ -85,7 +85,7 @@ export function Hero() {
         )}
       </div>
 
-    
+
       {/* Slider Controls
       {campusImages && campusImages.length > 1 && (
         <>
@@ -146,7 +146,7 @@ export function Hero() {
             <Image src="/logo-polnes2.png" alt="Logo Polnes 2" width={80} height={80} className="object-contain" />
             <Image src="/logo-ti.png" alt="Logo TI" width={80} height={80} className="object-contain" />
           </div>
-          <Badge className="mb-6 bg-amber-400 text-black hover:bg-amber-300 shadow-lg">{heroContent.badge}</Badge>
+          <Badge className="py-2 px-4 mb-6 bg-amber-400 text-black hover:bg-amber-300 shadow-lg">{heroContent.badge}</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">{heroContent.title}</h1>
           <p className="text-xl md:text-2xl mb-8 text-teal-100 font-light drop-shadow-md">{heroContent.tagline}</p>
           <p className="text-lg mb-10 text-teal-100 max-w-2xl mx-auto drop-shadow-md">{heroContent.description}</p>

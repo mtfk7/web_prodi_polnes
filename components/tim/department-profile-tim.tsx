@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Award, BookOpen, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
-
 // Mock data - replace with your actual data import
 const departmentProfile = {
   badge: 'Tentang Prodi',
@@ -13,20 +12,19 @@ const departmentProfile = {
   description:
     'Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.',
   stats: [
-    { value: '400+', label: 'Mahasiswa Aktif', color: 'text-blue-700', icon: Users },
-    { value: '10+', label: 'Dosen', color: 'text-[#212f4d]', icon: Award },
-    { value: '1000+', label: 'Total Mahasiswa', color: 'text-blue-700', icon: BookOpen },
+    { value: '400+', label: 'Mahasiswa Aktif', color: 'text-blue-600', icon: Users },
+    { value: '10+', label: 'Dosen', color: 'text-blue-600', icon: Award },
+    { value: '1000+', label: 'Total Mahasiswa', color: 'text-blue-600', icon: BookOpen },
   ],
-  image: '/activestudents.png?height=400&width=600',
+  image: '/utama/trk.webp?height=400&width=600',
   activeStudents: '487',
 };
-
 export function DepartmentProfile() {
   return (
-    <section id="tentang-kami" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 relative overflow-hidden">
+    <section id="tentang-kami" className="py-20 bg-gradient-to-br from-blue-50 via-blue-50 to-blue-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-200/30 to-blue-200/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-200/30 to-pink-200/30 rounded-full blur-3xl" />
       </div>
 
@@ -36,7 +34,7 @@ export function DepartmentProfile() {
             {/* Left Content */}
             <div>
               <div>
-                <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-[#212F4D] border-cyan-200 px-4 py-2 text-sm font-bold">{departmentProfile.badge}</Badge>
+                <Badge className="mb-6 bg-gradient-to-r from-blue-100 to-blue-100 text-blue-800 border-blue-200 px-4 py-2 text-sm font-bold">{departmentProfile.badge}</Badge>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">{departmentProfile.title}</h2>
@@ -71,32 +69,32 @@ export function DepartmentProfile() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
                   {/* Floating decorative elements */}
-                  <div className="absolute top-6 right-6 w-4 h-4 bg-cyan-400 rounded-full animate-pulse" />
+                  <div className="absolute top-6 right-6 w-4 h-4 bg-blue-400 rounded-full animate-pulse" />
                   <div className="absolute top-12 right-12 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300" />
                 </div>
 
                 {/* Enhanced Active Students Card */}
                 <div>
                   <Card className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-md shadow-2xl border-0 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50 opacity-50" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-50 opacity-50" />
                     <CardContent className="p-8 relative z-10">
                       <div className="flex items-center gap-4">
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-[#212f4d] rounded-2xl blur opacity-30" />
-                          <div className="relative bg-gradient-to-br from-blue-700 to-[#212f4d] p-4 rounded-2xl">
+                          <div className="relative bg-gradient-to-br from-blue-600 to-blue-700 p-4 rounded-2xl">
                             <Award className="h-8 w-8 text-white" />
                           </div>
                         </div>
                         <div>
                           <div className="font-semibold text-gray-700 mb-1">Akreditasi BAN-PT</div>
-                          <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-[#212f4d] bg-clip-text text-transparent">Baik</div>
+                          <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-[#212f4d] bg-clip-text text-transparent">B</div>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
                 </div>
 
-                    </div>
+              </div>
             </div>
           </div>
         </div>

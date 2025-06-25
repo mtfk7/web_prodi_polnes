@@ -7,7 +7,7 @@ import { Facilities } from "@/components/tk/facilities-tk"
 import { Achievements } from "@/components/tk/achievements-tk"
 import { SupportedBy } from "@/components/tk/supported-by-tk"
 import { StudentProjects } from "@/components/tk/student-projects-tk"
-
+import { LecturesTk } from "@/components/tk/lectures-tk"
 import { HowToApply } from "@/components/tk/how-to-apply-tk"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
@@ -22,12 +22,11 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
-        <VisionMission />
         <DepartmentProfile />
+        <VisionMission />
         <ProgramHighlights />
-        <Facilities />
-        <Achievements /> 
-        <StudentProjects />
+        <LecturesTk />
+        <Achievements />
         <SupportedBy />
         <HowToApply />
         <Footer />

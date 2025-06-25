@@ -12,7 +12,7 @@ const iconMap = {
 
 export function Achievements() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-teal-50">
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-teal-200 text-teal-900">Penghargaan & Pencapaian</Badge>

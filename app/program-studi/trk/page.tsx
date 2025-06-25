@@ -26,8 +26,8 @@ export default function HomePage() {
         <VisionMission />
         <ProgramHighlights />
         <LecturesTrk />
-                <Achievements />
-        <StudentProjects />
+        <Achievements />
+        <SupportedBy />
         <HowToApply />
         <Footer />
         <BackToTop />

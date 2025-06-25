@@ -10,6 +10,7 @@ import { StudentProjects } from "@/components/ti/student-projects-ti"
 import { HowToApply } from "@/components/ti/how-to-apply-ti"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
+import { LecturesTi } from "@/components/ti/lectures-ti"
 import Head from "next/head"
 
 export default function HomePage() {
@@ -21,13 +22,11 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
-        <VisionMission />
         <DepartmentProfile />
+        <VisionMission />
         <ProgramHighlights />
-        <Facilities />
+        <LecturesTi />
         <Achievements />
-        
-        <StudentProjects />
         <SupportedBy />
         <HowToApply />
         <Footer />

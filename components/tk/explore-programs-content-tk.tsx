@@ -21,10 +21,10 @@ export function ExploreProgramsContent() {
       {/* Program Overview */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
-          
+
           <div className="max-w-4xl mx-auto text-center text-black">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{programsData.title}</h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">{programsData.subtitle}</p>
+            <p className="text-gray-600 mb-6 leading-relaxed">{programsData.subtitle}</p>
           </div>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -67,7 +67,7 @@ export function ExploreProgramsContent() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-teal-100 text-teal-800">Peminatan</Badge>
+              <Badge className="py-2 px-4 mb-4 bg-teal-100 text-teal-800">Peminatan</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilih Jalur Anda</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Spesialisasi di bidang yang Anda minati dan menjadi ahli di bidang pilihan Anda
@@ -126,7 +126,7 @@ export function ExploreProgramsContent() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-teal-100 text-teal-700">Kurikulum</Badge>
+              <Badge className="py-2 px-4 mb-4 bg-teal-100 text-teal-700">Kurikulum</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Semester demi Semester</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Kurikulum kami dirancang dengan cermat mulai dari dasar hingga spesialisasi lanjutan
@@ -179,12 +179,12 @@ export function ExploreProgramsContent() {
         </div>
       </section>
 
-{/*       
+      {/*       
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-teal-100 text-teal-700">Lingkungan Belajar</Badge>
+              <Badge className="py-2 px-4 mb-4 bg-teal-100 text-teal-700">Lingkungan Belajar</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fasilitas Modern</h2>
             </div>
 
