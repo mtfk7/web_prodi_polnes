@@ -19,13 +19,13 @@ const navigation = [
   { name: "Tentang", href: "#tentang-kami" },
   { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Kurikulum", href: "#kurikulum" },
-  { name: "Daftar Dosen", href: "#daftar-dosen-tim" },
-  
+  { name: "Daftar Dosen", href: "#daftar-dosen" },
+
   { name: "Kontak", href: "#kontak" },
 ]
 
 const quickAccess = [
-      {
+  {
     name: "SIAKAD POLNES",
     href: "https://siakad.polnes.ac.id",
     description: "Sistem Informasi Akademik"
@@ -36,13 +36,13 @@ const quickAccess = [
     description: "Platform pembelajaran online"
   },
   {
-    name: "Layanan POLNES", 
+    name: "Layanan POLNES",
     href: "https://layanan.polnes.ac.id",
     description: "Portal layanan akademik"
   },
   {
     name: "E-Perpus Polnes",
-    href: "https://lib.polnes.ac.id", 
+    href: "https://lib.polnes.ac.id",
     description: "Perpustakaan digital"
   }
 ]
@@ -80,7 +80,7 @@ export function Header() {
           // Hitung offset untuk navbar fixed (80px height)
           const navbarHeight = 80
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-          
+
           window.scrollTo({
             top: elementPosition,
             behavior: "smooth"
@@ -104,7 +104,7 @@ export function Header() {
           // Hitung offset untuk navbar fixed (80px height)
           const navbarHeight = 80
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-          
+
           window.scrollTo({
             top: elementPosition,
             behavior: "smooth"
@@ -118,14 +118,14 @@ export function Header() {
     if (href.startsWith("#")) {
       // Update URL dengan hash tanpa reload halaman
       window.history.pushState(null, '', href)
-      
+
       // Smooth scroll for anchor links
       const element = document.querySelector(href)
       if (element) {
         // Hitung offset untuk navbar fixed (80px height)
         const navbarHeight = 80
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-        
+
         window.scrollTo({
           top: elementPosition,
           behavior: "smooth"
@@ -149,7 +149,7 @@ export function Header() {
       <div className="w-full max-w-7xl mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo & Title */}
         <Link href="/" className="flex items-center gap-3 min-w-max">
-         <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-8 w-40 object-contain" priority />
+          <Image src="/logo-polnes.png" alt="Logo Polnes" width={160} height={33} className="h-8 w-40 object-contain" priority />
         </Link>
 
         {/* Desktop Navigation */}
@@ -164,7 +164,7 @@ export function Header() {
               <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
             </button>
           ))}
-          
+
           {/* Akses Cepat Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -174,8 +174,8 @@ export function Header() {
                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent 
-              align="center" 
+            <DropdownMenuContent
+              align="center"
               className="w-64 bg-white/95 backdrop-blur border-blue-200 shadow-xl"
             >
               {quickAccess.map((item) => (
@@ -234,7 +234,7 @@ export function Header() {
                   {item.name}
                 </button>
               ))}
-              
+
               {/* Mobile Akses Cepat */}
               <div className="space-y-2">
                 <div className="text-blue-200 font-medium text-lg py-2">Akses Cepat</div>
@@ -250,7 +250,7 @@ export function Header() {
                   </a>
                 ))}
               </div>
-              
+
               <Button
                 asChild
                 variant="outline"

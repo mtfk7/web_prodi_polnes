@@ -19,7 +19,7 @@ const navigation = [
   { name: "Tentang", href: "#tentang-kami" },
   { name: "Visi Misi", href: "#visi-dan-misi" },
   { name: "Kurikulum", href: "#kurikulum" },
-  { name: "Daftar Dosen", href: "#daftar-dosen-tim" },
+  { name: "Daftar Dosen", href: "#daftar-dosen" },
 
   { name: "Kontak", href: "#kontak" },
 ]

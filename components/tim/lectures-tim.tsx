@@ -40,7 +40,7 @@ export function LecturesTim() {
   };
 
   return (
-    <section id="daftar-dosen-tim" className="py-20 bg-white relative overflow-hidden">
+    <section id="daftar-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
         <Badge className="hover:bg-blue-200 mb-6 bg-blue-100 text-blue-800 px-4 py-2 shadow-lg">Dosen Prodi TIM</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">

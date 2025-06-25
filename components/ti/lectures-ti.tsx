@@ -40,7 +40,7 @@ export function LecturesTi() {
   };
 
   return (
-    <section id="daftar-dosen-tim" className="py-20 bg-white relative overflow-hidden">
+    <section id="daftar-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
         <Badge className="py-2 px-4 py-2 px-4 py-2 px-4 hover:bg-emerald-200 mb-6 bg-emerald-100 text-emerald-800 px-4 py-2 shadow-lg">Dosen Prodi TI</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">
