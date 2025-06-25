@@ -31,7 +31,7 @@ export function Hero() {
       setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1))
     }
   }
-  
+
   const nextSlide = () => {
     if (total > 0) {
       setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1))
@@ -85,7 +85,7 @@ export function Hero() {
         )}
       </div>
 
-    
+
       {/* Slider Controls
       {campusImages && campusImages.length > 1 && (
         <>
@@ -164,7 +164,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-[#212F4D]-700 text-white hover:bg-[#212F4D]-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+              className="bg-green-700 text-white hover:bg-green-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
             >
               <Link href="#cara-mendaftar">
                 Cara Mendaftar

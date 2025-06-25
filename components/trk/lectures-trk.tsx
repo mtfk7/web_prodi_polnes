@@ -40,7 +40,7 @@ export function LecturesTrk() {
   };
 
   return (
-    <section id="staf-dan-dosen" className="py-20 bg-white relative overflow-hidden">
+    <section id="daftar-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
         <Badge className="hover:bg-cyan-200 mb-4 bg-cyan-100 text-cyan-800 px-4 py-2 text-sm">Dosen Prodi TRK</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">
