@@ -5,6 +5,11 @@ export const lecturers = [
     photo: "/Dosen Prodi TK/agusma.jpg",
   },
   {
+    name: "Mulyanto",
+    position: "Sekjur & Dosen Prodi TK",
+    photo: "/dosen/mulyanto.jpg",
+  },
+  {
     name: "Ansar Rizal, ST., M.Kom",
     position: "Dosen Prodi TK",
     photo: "/Dosen Prodi TK/ansar.jpg",
