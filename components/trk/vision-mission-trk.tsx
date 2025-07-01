@@ -4,6 +4,7 @@ import { visionMission } from '@/data/trk/content';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Target } from 'lucide-react';
 
+ {/* Visi MISI TRK*/}
 export function VisionMission() {
   return (
     <section id="visi-dan-misi" className="relative bg-cover bg-center bg-no-repeat py-20 text-white" style={{ backgroundImage: "url('/Group 3.png')" }}>

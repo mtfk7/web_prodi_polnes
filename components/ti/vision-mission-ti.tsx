@@ -1,51 +1,42 @@
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Eye, Target, Star } from "lucide-react"
-import { visionMission } from "@/data/ti/content"
+'use client';
 
+import { visionMission } from '@/data/ti/content';
+import { Badge } from '@/components/ui/badge';
+import { CheckCircle, Target } from 'lucide-react';
+
+{
+  /* Visi MISI TI*/
+}
 export function VisionMission() {
   return (
-    <section id="visi-dan-misi" className="py-20 bg-gradient-to-br from-emerald-700 to-emerald-900">
-      <div className="container px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-white text-emerald-700">Visi & Misi</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Komitmen untuk Menjadi Terbaik</h2>
+    <section id="visi-dan-misi" className="relative bg-cover bg-center bg-no-repeat py-20 text-white" style={{ backgroundImage: "url('/Group 5.png')" }}>
+      <div className="container px-4 md:px-8 max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <Badge className="mb-4 bg-[#15503f] text-white text-base md:text-lg font-semibold px-5 py-2 rounded-full">Visi & Misi</Badge>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          {/* Visi */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Visi</h3>
+            <div className="flex items-start gap-3">
+              <Target className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+              <p className="text-lg leading-relaxed">{visionMission.vision.content}</p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <Card className="bg-white/10 backdrop-blur border-white/20 text-white">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-4">
-                  <Eye className="h-8 w-8 text-emerald-400" />
-                  <CardTitle className="text-2xl">{visionMission.vision.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-lg leading-relaxed text-emerald-100">{visionMission.vision.content}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur border-white/20 text-white">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-4">
-                  <Target className="h-8 w-8 text-emerald-400" />
-                  <CardTitle className="text-2xl">{visionMission.mission.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-emerald-100">
-                  {visionMission.mission.items.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Star className="h-5 w-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+          {/* Misi */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Misi</h3>
+            <ul className="space-y-4 text-lg">
+              {visionMission.mission.items.map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
