@@ -2,7 +2,7 @@ export const lecturers = [
   {
     name: "Agusma Wajiansyah, SST., MT.",
     position: "Kaprodi TK",
-    photo: "/Dosen Prodi TK/agusma.jpg",
+    photo: "/dosen/agusma.jpg",
   },
   {
     name: "Mulyanto, S.Kom., M.Cs",
@@ -12,41 +12,41 @@ export const lecturers = [
   {
     name: "Ansar Rizal, ST., M.Kom",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/ansar.jpg",
+    photo: "/dosen/ansar.jpg",
   },
   {
     name: "Didikus Susilo Budi Utomo, ST., M.Sc",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/didi.jpg",
+    photo: "/dosen/didi.jpg",
   },
   {
     name: "Dwi Titi Maesaroh, S.Pd., M.Pd.",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/dwi.jpg",
+    photo: "/dosen/dwi.jpg",
   },
   {
     name: "Fajerin Biabdillah, M.Kom",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/fajerin.jpg",
+    photo: "/dosen/fajerin.jpg",
   },
   {
     name: "Hari Purwadi, ST., MT.",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/hari.jpg",
+    photo: "/dosen/hari.jpg",
   },
   {
     name: "M. Taufiq Sumadi, S.Tr.Kom, M.Tr.Kom",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/taufiq.jpg",
+    photo: "/dosen/taufiq.jpg",
   },
   {
     name: "Rihartanto, ST.",
     position: "Dosen Prodi TK",
-    photo: "/Dosen Prodi TK/rihartanto.jpg",
+    photo: "/dosen/rihartanto.jpg",
   },
   {
     name: "Supriadi, SST., MT.",
     position: "Kalab Mekatronika",
-    photo: "/Dosen Prodi TK/supriadi.jpg",
+    photo: "/dosen/supriadi.jpg",
   }
 ];

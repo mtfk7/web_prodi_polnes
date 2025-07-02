@@ -166,7 +166,7 @@ export const lecturers = [
   {
     name: 'M. Bagus Bintang Timur, S.Kom',
     position: 'Dosen Jurusan TI',
-    photo: '/dosen/irwansyah.jpg',
+    photo: '/dosen/bintang.jpg',
   },
   {
     name: 'Noor Alam Hadiwijaya, ST., M.Cs.',
