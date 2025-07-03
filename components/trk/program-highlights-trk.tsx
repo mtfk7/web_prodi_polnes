@@ -40,7 +40,7 @@ export function ProgramHighlights() {
   };
 
   return (
-    <section id="kurikulum" className="py-20 bg-white">
+    <section id="kurikulum" className="py-20 bg-sky-50">
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge className="hover:bg-cyan-200 mb-4 bg-cyan-100 text-cyan-800 px-4 py-2 text-sm">Sorotan Kurikulum</Badge>

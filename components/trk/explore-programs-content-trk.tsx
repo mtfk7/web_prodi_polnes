@@ -18,7 +18,7 @@ export function ExploreProgramsContent() {
   return (
     <div className="bg-white">
       {/* Program Overview */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container px-4">
           <div className="max-w-4xl mx-auto text-center text-black">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{programsData.title}</h2>
@@ -60,8 +60,8 @@ export function ExploreProgramsContent() {
         </div>
       </section>
 
-            {/* Curriculum */}
-      <section className="py-20 bg-gray-50">
+      {/* Curriculum */}
+      <section className="py-20 bg-sky-50">
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">

@@ -49,9 +49,9 @@ export const lecturers = [
     position: "Dosen Prodi TRK",
     photo: "/dosen/irwansyah.jpg",
   },
-    {
+  {
     name: "Muhammad Bagus Bintang Timur, S.Kom",
     position: "Dosen Prodi TRK",
-    photo: "/dosen/irwansyah.jpg",
+    photo: "/dosen/bintang.jpg",
   },
 ]

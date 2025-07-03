@@ -34,7 +34,7 @@ export function ProgramHighlights() {
   }
 
   return (
-    <section id="kurikulum" className="py-20 bg-white">
+    <section id="kurikulum" className="py-20 bg-teal-50">
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge className="py-2 px-4 mb-4 bg-teal-100 text-teal-800">Sorotan Kurikulum</Badge>

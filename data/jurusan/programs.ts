@@ -1,7 +1,7 @@
 export const programsData = {
   title: 'Jelajahi Program Kami',
   subtitle: 'Kurikulum komprehensif yang dirancang untuk masa depan digital',
-  description: 'Program D4 Teknik Informatika Multimedia menawarkan pengalaman belajar lengkap yang menggabungkan pengetahuan teoretis dengan keterampilan praktis.',
+  description: 'Jurusan Teknologi Informasi menawarkan pengalaman belajar lengkap yang menggabungkan pengetahuan teoretis dengan keterampilan praktis.',
 
   curriculum: [
     {

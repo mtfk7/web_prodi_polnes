@@ -13,12 +13,12 @@ export const lecturers = [
     position: "Kalab Software & Dosen Prodi TIM",
     photo: "/dosen/farindika.jpg",
   },
-    {
+  {
     name: "Subhan Hartanto, M.Kom",
     position: "Kalab Multimedia & Dosen Prodi TIM",
     photo: "/dosen/subhan.jpg",
   },
-    {
+  {
     name: "M. Zainul Rohman, SST., MT.",
     position: "Dosen Prodi TIM",
     photo: "/dosen/zain.jpg",
@@ -38,7 +38,7 @@ export const lecturers = [
     position: "Dosen Prodi TIM",
     photo: "/dosen/damar.jpg",
   },
-  {  
+  {
     name: "M. Farman Andrijasa, S.Kom., M.Kom.",
     position: "Dosen Prodi TIM",
     photo: "/dosen/farman.jpg",
@@ -58,9 +58,9 @@ export const lecturers = [
     position: "Dosen Prodi TIM",
     photo: "/dosen/yusni.jpg",
   },
-      {
+  {
     name: "Muhammad Bagus Bintang Timur, S.Kom",
     position: "Dosen Prodi TIM",
-    photo: "/dosen/irwansyah.jpg",
+    photo: "/dosen/bintang.jpg",
   },
 ]

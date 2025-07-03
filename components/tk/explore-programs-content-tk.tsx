@@ -19,7 +19,7 @@ export function ExploreProgramsContent() {
     <div className="bg-white">
 
       {/* Program Overview */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container px-4">
 
           <div className="max-w-4xl mx-auto text-center text-black">
@@ -61,9 +61,9 @@ export function ExploreProgramsContent() {
           </div>
         </div>
       </section>
-
-      {/* Specializations */}
-      <section className="py-20 bg-white-100">
+      {/*  
+ 
+      <section className="py-20 bg-teal-50">
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -119,7 +119,7 @@ export function ExploreProgramsContent() {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
 
       {/* Curriculum */}
       <section className="py-20 bg-gray-50">
