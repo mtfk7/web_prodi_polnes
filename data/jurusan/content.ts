@@ -82,7 +82,7 @@ export const visionMission = {
       'Menghasilkan Karya yang Inovatif dan Bermanfaat',
       'Membangun Jaringan Kerjasama dan Kewirausahaan dengan Stakeholder',
       'Menghasilkan Lulusan dan Tenaga Ahli Profesional yang Beretika',
-      'Terlibat Secara Aktif didalam Pengembangan dan Peningkatan Sistem Pendidikan Politeknik di Indonesia'
+      'Terlibat Secara Aktif didalam Pengembangan dan Peningkatan Sistem Pendidikan Politeknik di Indonesia',
     ],
   },
 };
