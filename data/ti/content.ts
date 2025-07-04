@@ -91,7 +91,7 @@ export const departmentProfile = {
   badge: "Tentang Prodi D3 TI",
   title: "Pelopor Inovasi Pendidikan Informatika Multimedia",
   description:
-    "Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.",
+    "Program Studi D3 Teknik Informatika Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2013. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.",
   stats: [
     { value: "1000+", label: "Lulusan", color: "text-emerald-600" },
     { value: "10+", label: "Dosen Ahli", color: "text-emerald-600" },
