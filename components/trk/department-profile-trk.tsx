@@ -10,7 +10,7 @@ const departmentProfile = {
   badge: 'Tentang Prodi TRK',
   title: 'Prodi D4 Teknologi Rekayasa Komputer',
   description:
-    'Kami adalah departemen yang berfokus pada pengembangan teknologi komputer dan rekayasa perangkat lunak. Dengan fasilitas modern dan dosen berpengalaman, kami berkomitmen menghasilkan lulusan yang kompeten dan siap menghadapi tantangan industri teknologi.',
+    'Kami adalah Program Studi Teknologi Rekayasa Komputer Politeknik Negeri Samarinda yang berfokus pada pengembangan sistem komputer, jaringan, dan rekayasa perangkat lunak berbasis industri. Dengan dukungan fasilitas modern dan dosen berpengalaman di bidangnya, kami berkomitmen mencetak lulusan yang kompeten, adaptif, dan siap bersaing di era transformasi digital.',
   stats: [
     { value: '400+', label: 'Mahasiswa Aktif', color: 'text-sky-800', icon: Users },
     { value: '10+', label: 'Dosen Berpengalaman', color: 'text-sky-800', icon: Award },
@@ -93,7 +93,6 @@ export function DepartmentProfile() {
                     </CardContent>
                   </Card>
                 </div>
-
               </div>
             </div>
           </div>

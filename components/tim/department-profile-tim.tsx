@@ -10,7 +10,7 @@ const departmentProfile = {
   badge: 'Tentang Prodi',
   title: 'Prodi Teknik Informatika Multimedia',
   description:
-    'Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2018. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.',
+    'Program Studi Teknik Informatika Multimedia Politeknik Negeri Samarinda merupakan pelopor pendidikan vokasi di bidang digital dan teknologi informasi sejak didirikan pada tahun 2014. Program ini menggabungkan landasan teoritis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi tantangan dan peluang di era transformasi digital yang terus berkembang',
   stats: [
     { value: '400+', label: 'Mahasiswa Aktif', color: 'text-blue-600', icon: Users },
     { value: '10+', label: 'Dosen', color: 'text-blue-600', icon: Award },
@@ -93,7 +93,6 @@ export function DepartmentProfile() {
                     </CardContent>
                   </Card>
                 </div>
-
               </div>
             </div>
           </div>

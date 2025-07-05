@@ -1,27 +1,25 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { Code2, Palette, Smartphone, Gamepad2, CheckCircle, Clock, Users, Award } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { programsData } from "@/data/ti/programs"
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Code2, Palette, Smartphone, Gamepad2, CheckCircle, Clock, Users, Award } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { programsData } from '@/data/ti/programs';
 
 const iconMap = {
   Code2,
   Palette,
   Smartphone,
   Gamepad2,
-}
+};
 
 export function ExploreProgramsContent() {
   return (
     <div className="bg-white">
-
       {/* Program Overview */}
       <section className="py-20 bg-white">
         <div className="container px-4">
-
           <div className="max-w-4xl mx-auto text-center text-black">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{programsData.title}</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">{programsData.subtitle}</p>
@@ -31,10 +29,10 @@ export function ExploreProgramsContent() {
               <Card className="text-center">
                 <CardHeader>
                   <Clock className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
-                  <CardTitle>Program 4 Tahun</CardTitle>
+                  <CardTitle>Program 3 Tahun</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>Kurikulum komprehensif 8 semester dengan magang industri. Lulusan dengan gelar S.Tr.Kom</CardDescription>
+                  <CardDescription>Kurikulum komprehensif 6 semester dengan magang industri. Lulusan dengan gelar A.Md.Kom</CardDescription>
                 </CardContent>
               </Card>
 
@@ -62,7 +60,6 @@ export function ExploreProgramsContent() {
         </div>
       </section>
 
-
       {/* Curriculum */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
@@ -70,9 +67,7 @@ export function ExploreProgramsContent() {
             <div className="text-center mb-16">
               <Badge className="py-2 px-4 py-2 px-4 mb-4 bg-emerald-100 text-emerald-700">Kurikulum</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Semester demi Semester</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Kurikulum kami dirancang dengan cermat mulai dari dasar hingga spesialisasi lanjutan
-              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto">Kurikulum kami dirancang dengan cermat mulai dari dasar hingga spesialisasi lanjutan</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,9 +76,7 @@ export function ExploreProgramsContent() {
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                          {semester.semester}
-                        </div>
+                        <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{semester.semester}</div>
                         <CardTitle className="text-lg">{semester.title}</CardTitle>
                       </div>
                       <Badge variant="outline" className="text-xs">
@@ -152,5 +145,5 @@ export function ExploreProgramsContent() {
         </div>
       </section> */}
     </div>
-  )
-} 
+  );
+}

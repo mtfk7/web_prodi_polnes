@@ -1,48 +1,48 @@
-"use client"
+'use client';
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import Link from "next/link"
-import { ChevronDown } from "lucide-react"
-import { heroContent } from "@/data/tim/content"
-import { campusImages } from "@/data/tim/content"
-import { useState, useEffect, useRef } from "react"
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
+import { heroContent } from '@/data/ti/content';
+import { campusImages } from '@/data/ti/content';
+import { useState, useEffect, useRef } from 'react';
 
 export function Hero() {
-  const [current, setCurrent] = useState(0)
-  const total = campusImages?.length || 0
-  const intervalRef = useRef<NodeJS.Timeout | null>(null)
+  const [current, setCurrent] = useState(0);
+  const total = campusImages?.length || 0;
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   // Auto play effect
   useEffect(() => {
     if (total > 0) {
       intervalRef.current = setInterval(() => {
-        setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1))
-      }, 5000) // Slower for hero
+        setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
+      }, 5000); // Slower for hero
       return () => {
-        if (intervalRef.current) clearInterval(intervalRef.current)
-      }
+        if (intervalRef.current) clearInterval(intervalRef.current);
+      };
     }
-  }, [total])
+  }, [total]);
 
   const prevSlide = () => {
     if (total > 0) {
-      setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1))
+      setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
     }
-  }
+  };
 
   const nextSlide = () => {
     if (total > 0) {
-      setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1))
+      setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
     }
-  }
+  };
 
   const goToSlide = (index: number) => {
     if (total > 0 && index >= 0 && index < total) {
-      setCurrent(index)
+      setCurrent(index);
     }
-  }
+  };
 
   return (
     <section id="beranda" className="relative overflow-hidden min-h-screen flex items-center">
@@ -53,7 +53,7 @@ export function Hero() {
             {campusImages.map((img, idx) => (
               <Image
                 key={idx}
-                src={img.src || "/placeholder.svg"}
+                src={img.src || '/placeholder.svg'}
                 alt={img.alt}
                 fill
                 className={`object-cover w-full h-full absolute top-0 left-0 transition-all duration-1000 ease-in-out
@@ -70,13 +70,7 @@ export function Hero() {
           </>
         ) : (
           <>
-            <Image
-              src={heroContent.backgroundImage || "/placeholder.svg?height=800&width=1920"}
-              alt="Campus Background"
-              fill
-              className="object-cover"
-              priority
-            />
+            <Image src={heroContent.backgroundImage || '/placeholder.svg?height=800&width=1920'} alt="Campus Background" fill className="object-cover" priority />
             {/* emerald Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-800/85 via-emerald-900/75 to-emerald-900/85" />
             {/* Dark Overlay for better text readability */}
@@ -84,7 +78,6 @@ export function Hero() {
           </>
         )}
       </div>
-
 
       {/* Slider Controls
       {campusImages && campusImages.length > 1 && (
@@ -151,31 +144,19 @@ export function Hero() {
           <p className="text-xl md:text-2xl mb-8 text-emerald-100 font-light drop-shadow-md">{heroContent.tagline}</p>
           <p className="text-lg mb-10 text-emerald-100 max-w-2xl mx-auto drop-shadow-md">{heroContent.description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-amber-400 text-black hover:bg-amber-300 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-            >
+            <Button asChild size="lg" className="bg-amber-400 text-black hover:bg-amber-300 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
               <Link href="#kurikulum">
                 Jelajahi Kurikulum
                 <ChevronDown className="h-5 w-5" />
               </Link>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              className="bg-emerald-700 text-white hover:bg-emerald-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-            >
+            <Button asChild size="lg" className="bg-emerald-700 text-white hover:bg-emerald-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
               <Link href="#cara-mendaftar">
                 Cara Mendaftar
                 <ChevronDown className="h-5 w-5" />
               </Link>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              className="bg-red-700 text-white hover:bg-red-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-            >
+            <Button asChild size="lg" className="bg-red-700 text-white hover:bg-red-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
               <a href="https://youtu.be/FAKwpDSEbDQ?si=6H9YHJTgXIa--UWP" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white">
                   <path d="M21.8 8.001a2.75 2.75 0 0 0-1.93-1.946C18.1 5.5 12 5.5 12 5.5s-6.1 0-7.87.555A2.75 2.75 0 0 0 2.2 8.001 28.6 28.6 0 0 0 1.5 12a28.6 28.6 0 0 0 .7 3.999 2.75 2.75 0 0 0 1.93 1.946C5.9 18.5 12 18.5 12 18.5s6.1 0 7.87-.555a2.75 2.75 0 0 0 1.93-1.946A28.6 28.6 0 0 0 22.5 12a28.6 28.6 0 0 0-.7-3.999zM10 15.5v-7l6 3.5-6 3.5z" />
@@ -190,5 +171,5 @@ export function Hero() {
       {/* Bottom Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t" />
     </section>
-  )
+  );
 }

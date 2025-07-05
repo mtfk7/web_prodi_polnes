@@ -76,7 +76,7 @@ export function JurusanFacilities() {
     <section id="fasilitas" className="py-20 bg-white">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <Badge className="py-2 px-4 mb-4 bg-green-200 text-green-600">Fasilitas Jurusan</Badge>
+          <Badge className="px-4 py-2 text-sm mb-4 bg-green-200 text-green-600">Fasilitas Jurusan</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fasilitas Pembelajaran Modern</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">Laboratorium dan fasilitas berstandar industri untuk mendukung pembelajaran praktis</p>
         </div>

@@ -136,7 +136,7 @@ export const achievements = [
   {
     icon: 'Trophy',
     title: 'Kompetisi Nasional',
-    description: 'Juara 1 Lomba Desain Multimedia 2023',
+    description: 'Juara 1 Hackathon Infinite Devfest 2025',
     color: 'text-cyan-600',
   },
   {
@@ -205,7 +205,6 @@ export const studentProjects = [
     type: 'Skripsi',
   },
 ];
-
 
 export const contactInfo = {
   address: {

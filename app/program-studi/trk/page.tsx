@@ -11,6 +11,7 @@ import { StudentProjects } from '@/components/trk/student-projects-trk';
 import { HowToApply } from '@/components/trk/how-to-apply-trk';
 import { Footer } from '@/components/footer';
 import { BackToTop } from '@/components/back-to-top';
+import { ScrollAnimationWrapper } from '@/components/page-animation-wrapper';
 import Head from 'next/head';
 
 export default function HomePage() {
@@ -22,13 +23,27 @@ export default function HomePage() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
-        <DepartmentProfile />
-        <VisionMission />
-        <ProgramHighlights />
-        <LecturesTrk />
-        <Achievements />
-        <SupportedBy />
-        <HowToApply />
+        <ScrollAnimationWrapper animationType="fadeInUp" delay={100}>
+          <DepartmentProfile />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="fadeInLeft" delay={200}>
+          <VisionMission />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="fadeInRight" delay={100}>
+          <ProgramHighlights />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="scaleIn" delay={150}>
+          <LecturesTrk />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="fadeInUp" delay={100}>
+          <Achievements />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="fadeInLeft" delay={200}>
+          <SupportedBy />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animationType="scaleIn" delay={150}>
+          <HowToApply />
+        </ScrollAnimationWrapper>
         <Footer />
         <BackToTop />
       </div>

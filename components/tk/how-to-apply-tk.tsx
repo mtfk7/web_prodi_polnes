@@ -13,7 +13,6 @@ export function HowToApply() {
             <Badge className="mb-4 bg-white px-4 py-2 text-teal-800 text-sm font-bold shadow-lg hover:bg-gray-100 hover:text-teal-700">Pendaftaran</Badge>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
             {/* Right Image Section */}
             <div className="relative">
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
@@ -28,12 +27,12 @@ export function HowToApply() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-gray-400 rounded-2xl blur opacity-90" />
                     <div className="relative bg-gradient-to-br from-teal-600  to-teal-800 p-3 rounded-xl">
-                      <Award className="h-6 w-6 text-yellow-500" />
+                      <Award className="h-6 w-6 text-white" />
                     </div>
                   </div>
                   <div>
                     <div className="font-semibold text-sm text-teal-700 mb-0.5">Pendaftaran Dibuka</div>
-                    <div className="text-yellow-500 text-lg font-bold">2024/2025</div>
+                    <div className="text-black text-lg font-bold">2024/2025</div>
                   </div>
                 </div>
               </div>
