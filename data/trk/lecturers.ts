@@ -10,7 +10,7 @@ export const lecturers = [
   {
     name: "Agus Triyono, ST, MT",
     position: "Kalab Hardware & Dosen Prodi TRK",
-    photo: "/dosen/agus.jpg",
+    photo: "/dosen/yoyon.jpg",
   },
 
   // Dosen Prodi TRK
