@@ -2,19 +2,19 @@ export const siteConfig = {
   name: 'POLNES',
   title: 'D4 Teknologi Rekayasa Komputer',
   tagline: 'Membangun Kreativitas dan Teknologi',
-  description: 'Memberdayakan generasi profesional multimedia berikutnya melalui pendidikan inovatif, teknologi mutakhir, dan keunggulan kreatif.',
+  description: 'Memberdayakan generasi profesional berikutnya melalui pendidikan inovatif, teknologi informasi, dan keunggulan kreatif.',
   url: 'https://polnes.ac.id',
 };
 
 export const heroContent = {
-  badge: 'Jurusan Teknologi Informasi',
+  badge: 'Politeknik Negeri Samarinda',
   title: 'D4 Teknologi Rekayasa Komputer',
   tagline: 'Membangun Kreativitas dan Teknologi',
-  description: 'Memberdayakan generasi profesional berikutnya melalui pendidikan inovatif, teknologi informasi, dan keunggulan kreatif.',
+  description: 'Program Studi D4 Teknologi Rekayasa Komputer Politeknik Negeri Samarinda menawarkan program studi unggulan yang mempersiapkan lulusan siap kerja di era digital',
   backgroundImage: '/hero.jpg?height=800&width=1920',
   buttons: [
-    { text: 'Jelajahi Kurikulum', variant: 'default' as const },
-    { text: 'Tonton Video', variant: 'outline' as const },
+    { text: 'Jelajahi Program Studi', variant: 'default' as const },
+    { text: 'Video Profil', variant: 'outline' as const },
   ],
 };
 
@@ -55,7 +55,7 @@ export const programHighlights = [
     iconGradient: 'from-blue-600 to-cyan-500',
   },
   {
-    icon: 'Network',
+    icon: 'Code2',
     title: 'Jaringan & Keamanan',
     description: 'Belajar membangun dan mengamankan sistem jaringan komputer.',
     gradient: 'from-purple-50 to-indigo-100',
@@ -73,25 +73,22 @@ export const programHighlights = [
 export const visionMission = {
   vision: {
     title: 'Visi',
-    content: 'Menjadi Pusat Unggulan Pendidikan dan Karya Bidang Teknologi dan Komunikasi',
+    content: 'Menyelenggarakan pendidikan vokasi yang unggul di bidang Teknologi Rekayasa Komputer ditingkat Nasional dan Internasional',
   },
   mission: {
     title: 'Misi',
     items: [
-      'Menyelenggarakan Pendidikan Berstandar Nasional',
-      'Menghasilkan Karya yang Inovatif dan Bermanfaat',
-      'Membangun Jaringan Kerjasama dan Kewirausahaan dengan Stakeholder',
-      'Menghasilkan Lulusan dan Tenaga Ahli Profesional yang Beretika',
-      'Terlibat Secara Aktif didalam Pengembangan dan Peningkatan Sistem Pendidikan Politeknik di Indonesia',
+      'Menyelenggarakan pendidikan bidang Teknologi Rekayasa Komputer yang bertumpu pada sumber daya alam secara lestari dan berbudaya.',
+      'Menyelenggarakan pendidikan vokasi yang bertumpu kepada peningkatan mutu, kualitas, perluasan akses serta lulusan berdaya saing tinggi sesuai dengan kebutuhan pengguna.',
     ],
   },
 };
 
 export const departmentProfile = {
-  badge: 'Tentang Jurusan',
-  title: 'Deskripsi Singkat Teknologi Rekayasa Komputer',
+  badge: 'Tentang Prodi D4 TRK',
+  title: 'Pelopor Inovasi Pendidikan Teknologi Rekayasa Komputer',
   description:
-    'Program Studi Teknologi Rekayasa Komputer menyelenggarakan pendidikan vokasi yang akan menghasilkan lulusan dengan kompetensi utama sebagai network administrator, senior programmer, dan IoT Developer yang mampu bersaing di tingkat nasional. Kurikulum prodi ini disusun berdasarkan Standar Kompetensi Kerja Nasional Indonesia (SKKNI) dan Accreditation Board for Engineering and Technology (ABET) bidang technology of computer engineering.',
+    'Program Studi D4 Teknologi Rekayasa Komputer Politeknik Negeri Samarinda telah menjadi pelopor pendidikan digital dan teknologi informasi sejak didirikan pada tahun 2013. Dengan menggabungkan pengetahuan teoretis dengan keterampilan praktis untuk mempersiapkan mahasiswa menghadapi perkembangan dunia digital dan teknologi yang pesat.',
   stats: [
     { value: '1000+', label: 'Lulusan', color: 'text-cyan-600' },
     { value: '10+', label: 'Dosen Ahli', color: 'text-cyan-600' },
@@ -139,7 +136,7 @@ export const achievements = [
   {
     icon: 'Trophy',
     title: 'Kompetisi Nasional',
-    description: 'Juara 1 Lomba Desain Multimedia 2023',
+    description: 'Juara 1 Hackathon Infinite Devfest 2025',
     color: 'text-cyan-600',
   },
   {

@@ -55,12 +55,13 @@ export const programHighlights = [
     iconGradient: 'from-blue-600 to-cyan-500',
   },
   {
-    icon: 'Network',
+    icon: 'Code2',
     title: 'Jaringan & Keamanan',
     description: 'Belajar membangun dan mengamankan sistem jaringan komputer.',
     gradient: 'from-purple-50 to-indigo-100',
     iconGradient: 'from-purple-600 to-indigo-500',
   },
+
   {
     icon: 'FlaskConical',
     title: 'Internet of Things (IoT)',

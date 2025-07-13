@@ -1,8 +1,8 @@
-import type { Metadata, Viewport } from 'next'
-import './globals.css'
+import type { Metadata, Viewport } from 'next';
+import './globals.css';
 
 const SITE_NAME = 'Teknologi Informasi POLNES';
-const SITE_URL = 'https://ti.polnes.ac.id';
+const SITE_URL = 'https://trk.polnes.ac.id';
 const SITE_DESCRIPTION = 'Jurusan Teknologi Informasi yang unggul dalam pengembangan multimedia interaktif, pemrograman, dan teknologi terkini.';
 
 const keywords = [
@@ -19,7 +19,7 @@ const keywords = [
   'Mobile Development',
   'Bidikmisi',
   'Kuliah Teknologi',
-  'D4 Teknologi Informasi'
+  'D4 Teknologi Informasi',
 ];
 
 export const viewport: Viewport = {
@@ -32,7 +32,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: {
     default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`
+    template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords: keywords,
@@ -82,38 +82,32 @@ export const metadata: Metadata = {
     yandex: 'YOUR_YANDEX_VERIFICATION_CODE', // Add your Yandex verification code if needed
   },
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
+    icon: [{ url: '/logo-polnes2.png', sizes: '32x32', type: 'image/png' }, { url: '/logo-polnes2.png', sizes: '16x16', type: 'image/png' }, { url: '/favicon.ico' }],
     shortcut: '/favicon.ico',
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
+    apple: [{ url: '/logo-polnes2.png', sizes: '180x180', type: 'image/png' }],
     other: [
       {
         rel: 'mask-icon',
-        url: '/safari-pinned-tab.svg',
-        color: '#1a56db',
+        url: '/logo-polnes2.png',
+        color: '#059669',
       },
     ],
   },
-  manifest: '/site.webmanifest', // Add your webmanifest file
+  manifest: '/manifest.json', // PWA manifest file
   other: {
     'msapplication-TileColor': '#1a56db',
     'msapplication-config': '/browserconfig.xml',
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }

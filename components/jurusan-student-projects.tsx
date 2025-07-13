@@ -1,30 +1,30 @@
-"use client"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel"
-import Image from "next/image"
-import Link from "next/link"
-import { studentProjects } from "@/data/tim/content"
-import { useEffect, useState } from "react"
+'use client';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
+import Image from 'next/image';
+import Link from 'next/link';
+import { studentProjects } from '@/data/jurusan/content';
+import { useEffect, useState } from 'react';
 
 export function StudentProjects() {
-  const [api, setApi] = useState<CarouselApi>()
-  const [current, setCurrent] = useState(0)
-  const [count, setCount] = useState(0)
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!api) {
-      return
+      return;
     }
 
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap() + 1)
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1)
-    })
-  }, [api])
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
 
   return (
     <section id="projek-mahasiswa" className="py-20 bg-white">
@@ -33,12 +33,12 @@ export function StudentProjects() {
           <Badge className="mb-4 bg-blue-100 text-blue-700">Proyek Mahasiswa</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Temukan Proyek Inovatif yang Dibuat Oleh Mahasiswa</h2>
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto">
           <Carousel
             setApi={setApi}
             opts={{
-              align: "start",
+              align: 'start',
               loop: true,
             }}
             className="w-full"
@@ -48,12 +48,7 @@ export function StudentProjects() {
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden h-full">
                     <div className="relative h-48 overflow-hidden">
-                      <Image
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+                      <Image src={project.image || '/placeholder.svg'} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                       <Badge className={`absolute top-4 left-4 ${project.badgeColor} text-white`}>{project.badge}</Badge>
                     </div>
                     <CardHeader>
@@ -85,9 +80,7 @@ export function StudentProjects() {
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index + 1 === current ? "bg-gray-800 scale-110" : "bg-gray-300 hover:bg-gray-400"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index + 1 === current ? 'bg-gray-800 scale-110' : 'bg-gray-300 hover:bg-gray-400'}`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -95,5 +88,5 @@ export function StudentProjects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

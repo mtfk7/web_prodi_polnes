@@ -15,7 +15,7 @@ const testimonials = [
 
     avatar: '/placeholder-user.jpg',
     rating: 5,
-    testimonial: 'Program D4 TI Multimedia memberikan fondasi yang kuat untuk karir di industri teknologi. Kurikulum yang relevan dan praktis langsung diterapkan di dunia kerja.',
+    testimonial: 'Program Teknologi Rekayasa Komputer memberikan fondasi yang kuat untuk karir di industri teknologi. Kurikulum yang relevan dan praktis langsung diterapkan di dunia kerja.',
     fromyear: '2021',
     year: '2025',
   },
@@ -234,9 +234,7 @@ export function JurusanTestimoni() {
                       </Avatar>
                       <div className="flex-1">
                         <CardTitle className="text-lg font-semibold transition-colors duration-300">{testimonial.name}</CardTitle>
-                        <CardDescription className="text-green-200 text-sm transition-colors duration-300">
-                          {testimonial.position} • {testimonial.company}
-                        </CardDescription>
+                        <CardDescription className="text-green-200 text-sm transition-colors duration-300">Alumni</CardDescription>
                         <div className="flex items-center gap-1 mt-1">
                           {[...Array(testimonial.rating)].map((_, i) => (
                             <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-transform duration-300 hover:scale-100" />

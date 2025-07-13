@@ -1,0 +1,55 @@
+{
+  "name": "D4 Teknologi Rekayasa Komputer - POLNES",
+  "short_name": "TRK POLNES",
+  "description": "Program Studi D4 Teknologi Rekayasa Komputer Politeknik Negeri Samarinda",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "512x512", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-polnes2.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "technology"],
+  "screenshots": [
+    {
+      "src": "/hero.jpg",
+      "sizes": "1920x1080",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ]
+}

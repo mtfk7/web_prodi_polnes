@@ -2,25 +2,14 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Link as LucideLink, Palette, Smartphone, Sparkles, Network, FlaskConical, BrainCircuit, ShieldCheck, UserCog, ChevronDown, ChevronUp } from 'lucide-react';
-import { programHighlights } from '@/data/trk/content';
+import { Code2, Smartphone, Globe, FlaskConical, ChevronDown, ChevronUp } from 'lucide-react';
+import { programHighlights } from '@/data/jurusan/content';
 
 import { Button } from '../ui/button';
 import { useState } from 'react';
 import { ExploreProgramsContent } from '../trk/explore-programs-content-trk';
 
-const iconMap = {
-  Code2,
-  Palette,
-  Smartphone,
-  Sparkles,
-  LucideLink,
-  Network,
-  FlaskConical,
-  BrainCircuit,
-  ShieldCheck,
-  UserCog,
-};
+// Direct icon mapping for reliability
 
 export function ProgramHighlights() {
   const [showExploreContent, setShowExploreContent] = useState(false);
@@ -49,12 +38,18 @@ export function ProgramHighlights() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programHighlights.map((highlight, index) => {
-            const IconComponent = iconMap[highlight.icon as keyof typeof iconMap];
             return (
               <Card key={index} className={`group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br ${highlight.gradient}`}>
                 <CardHeader className="text-center pb-4">
-                  <div className={`mx-auto w-16 h-16 bg-gradient-to-br ${highlight.iconGradient} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className="h-8 w-8 text-white" />
+                  <div
+                    className={`mx-auto w-16 h-16 ${
+                      index === 2 ? 'bg-gradient-to-br from-blue-600 to-cyan-500' : `bg-gradient-to-br ${highlight.iconGradient}`
+                    } rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                  >
+                    {index === 0 && <Code2 className="h-8 w-8 text-white" />}
+                    {index === 1 && <Smartphone className="h-8 w-8 text-white" />}
+                    {index === 2 && <Globe className="h-8 w-8 text-white" />}
+                    {index === 3 && <FlaskConical className="h-8 w-8 text-white" />}
                   </div>
                   <CardTitle className="text-xl">{highlight.title}</CardTitle>
                 </CardHeader>

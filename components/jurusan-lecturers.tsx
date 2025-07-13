@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { lecturers } from '@/data/jurusan/lecturers';
+import { lecturers } from '@/data/trk/lecturers';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
@@ -18,9 +18,7 @@ export function LecturersJurusan() {
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
   const [showAllLecturers, setShowAllLecturers] = useState(false);
 
-  const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
   useEffect(() => {
     if (!api) {
@@ -42,12 +40,10 @@ export function LecturersJurusan() {
   return (
     <section id="daftar-dosen" className="py-20 bg-white relative overflow-hidden">
       <div className="container px-6 text-center">
-        <Badge className="hover:bg-green-200 mb-4 bg-green-200 text-green-600 border-green-200 px-4 py-2 shadow-lg">Daftar Dosen</Badge>
+        <Badge className="hover:bg-blue-200 mb-4 bg-blue-200 text-blue-600 border-blue-200 px-4 py-2 shadow-lg">Dosen Prodi TRK</Badge>
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Tenaga Pengajar Profesional</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Didukung oleh staf dan dosen yang berdedikasi dan berpengalaman di bidangnya.
-          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">Didukung oleh dosen yang berdedikasi dan berpengalaman di bidang Teknologi Rekayasa Komputer.</p>
         </div>
 
         <Carousel
@@ -88,11 +84,7 @@ export function LecturersJurusan() {
 
         {/* Toggle button for showing all lecturers */}
         <div className="text-center mt-8">
-          <Button
-            onClick={toggleLecturersView}
-            size="lg"
-            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md"
-          >
+          <Button onClick={toggleLecturersView} size="lg" className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md">
             {showAllLecturers ? (
               <>
                 <ChevronUp className="h-5 w-5 mr-2" />
@@ -137,4 +129,4 @@ export function LecturersJurusan() {
       </div>
     </section>
   );
-} 
+}

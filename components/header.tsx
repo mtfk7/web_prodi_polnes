@@ -1,201 +1,181 @@
-"use client"
+'use client';
 
-import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown, ExternalLink } from "lucide-react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Button } from '@/components/ui/button';
+import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const navigation = [
-  { name: "Beranda", href: "#" },
-  { name: "Tentang", href: "#tentang-jurusan" },
-  { name: "Kontak", href: "#kontak" },
-]
-
-const programStudi = [
-  {
-    name: "D4 Teknik Informatika Multimedia",
-    href: "/program-studi/tim",
-    description: "Program unggulan multimedia interaktif",
-  },
-  {
-    name: "D4 Teknologi Rekayasa Komputer",
-    href: "/program-studi/trk",
-    description: "Fokus sistem komputer dan embedded",
-  },
-  {
-    name: "D3 Teknik Informatika",
-    href: "/program-studi/ti",
-    description: "Program praktis teknisi informatika",
-  },
-  {
-    name: "D3 Teknik Komputer",
-    href: "/program-studi/tk",
-    description: "Spesialisasi hardware dan jaringan",
-  },
-]
+  { name: 'Beranda', href: '#' },
+  { name: 'Visi Misi', href: '#visi-dan-misi' },
+  { name: 'Kurikulum', href: '#kurikulum' },
+  { name: 'Dosen', href: '#daftar-dosen' },
+  { name: 'Fasilitas', href: '#fasilitas' },
+  { name: 'Kontak', href: '#kontak' },
+];
 
 const profil = [
   {
-    name: "Tentang Jurusan",
-    href: "#tentang-jurusan",
-    description: "Tentang Jurusan TI",
+    name: 'Tentang Jurusan',
+    href: '#tentang-jurusan',
+    description: 'Tentang Jurusan TI',
   },
   {
-    name: "Visi & Misi",
-    href: "#visi-dan-misi",
-    description: "Visi dan Misi Jurusan TI",
-  },
-    {
-    name: "Fasilitas",
-    href: "#fasilitas",
-    description: "Fasilitas Jurusan TI",
+    name: 'Visi & Misi',
+    href: '#visi-dan-misi',
+    description: 'Visi dan Misi Jurusan TI',
   },
   {
-    name: "Struktur Organisasi",
-    href: "#struktur-organisasi",
-    description: "Struktur Organisasi Jurusan TI",
+    name: 'Fasilitas',
+    href: '#fasilitas',
+    description: 'Fasilitas Jurusan TI',
   },
   {
-    name: "Staf dan Dosen",
-    href: "#daftar-dosen",
-    description: "Daftar Staf dan Dosen Jurusan TI",
+    name: 'Struktur Organisasi',
+    href: '#struktur-organisasi',
+    description: 'Struktur Organisasi Jurusan TI',
   },
-]
+  {
+    name: 'Staf dan Dosen',
+    href: '#daftar-dosen',
+    description: 'Daftar Staf dan Dosen Jurusan TI',
+  },
+];
 
 const more = [
   {
-    name: "Struktur Organisasi",
-    href: "#struktur-organisasi",
-    description: "Struktur Organisasi Jurusan TI",
+    name: 'Struktur Organisasi',
+    href: '#struktur-organisasi',
+    description: 'Struktur Organisasi Jurusan TI',
   },
   {
-    name: "Berita",
-    href: "#berita",
-    description: "Portal berita Jurusan TI",
+    name: 'Berita',
+    href: '#berita',
+    description: 'Portal berita Jurusan TI',
   },
-]
+];
 const quickAccess = [
-        {
-    name: "SIAKAD POLNES",
-    href: "https://siakad.polnes.ac.id",
-    description: "Sistem Informasi Akademik"
+  {
+    name: 'SIAKAD POLNES',
+    href: 'https://siakad.polnes.ac.id',
+    description: 'Sistem Informasi Akademik',
   },
   {
-    name: "E-Learning POLNES",
-    href: "https://elearning.polnes.ac.id",
-    description: "Platform pembelajaran online",
+    name: 'E-Learning POLNES',
+    href: 'https://elearning.polnes.ac.id',
+    description: 'Platform pembelajaran online',
   },
   {
-    name: "Layanan POLNES",
-    href: "https://layanan.polnes.ac.id",
-    description: "Portal layanan akademik",
+    name: 'Layanan POLNES',
+    href: 'https://layanan.polnes.ac.id',
+    description: 'Portal layanan akademik',
   },
   {
-    name: "E-Perpus Polnes",
-    href: "https://lib.polnes.ac.id",
-    description: "Perpustakaan digital",
+    name: 'E-Perpus Polnes',
+    href: 'https://lib.polnes.ac.id',
+    description: 'Perpustakaan digital',
   },
-]
+];
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const router = useRouter()
-  const [scrolled, setScrolled] = useState(false)
-  const [showNavbar, setShowNavbar] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+  const [scrolled, setScrolled] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 10)
+      setScrolled(window.scrollY > 10);
       if (window.scrollY > lastScrollY && window.scrollY > 200) {
         // Scroll ke bawah, sembunyikan navbar
-        setShowNavbar(false)
+        setShowNavbar(false);
       } else {
         // Scroll ke atas, tampilkan navbar
-        setShowNavbar(true)
+        setShowNavbar(true);
       }
-      setLastScrollY(window.scrollY)
-    }
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [lastScrollY])
+      setLastScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [lastScrollY]);
 
   // Handle browser back/forward buttons
   useEffect(() => {
     const handlePopState = () => {
-      const hash = window.location.hash
+      const hash = window.location.hash;
       if (hash) {
-        const element = document.querySelector(hash)
+        const element = document.querySelector(hash);
         if (element) {
           // Hitung offset untuk navbar fixed (80px height)
-          const navbarHeight = 80
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
+          const navbarHeight = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
           window.scrollTo({
             top: elementPosition,
-            behavior: "smooth",
-          })
+            behavior: 'smooth',
+          });
         }
       }
-    }
+    };
 
-    window.addEventListener("popstate", handlePopState)
-    return () => window.removeEventListener("popstate", handlePopState)
-  }, [])
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Handle initial hash on page load
   useEffect(() => {
-    const hash = window.location.hash
+    const hash = window.location.hash;
     if (hash) {
       // Delay sedikit untuk memastikan semua komponen sudah ter-render
       setTimeout(() => {
-        const element = document.querySelector(hash)
+        const element = document.querySelector(hash);
         if (element) {
           // Hitung offset untuk navbar fixed (80px height)
-          const navbarHeight = 80
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
+          const navbarHeight = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
           window.scrollTo({
             top: elementPosition,
-            behavior: "smooth",
-          })
+            behavior: 'smooth',
+          });
         }
-      }, 100)
+      }, 100);
     }
-  }, [])
+  }, []);
 
   const handleNavClick = (href: string) => {
-    if (href.startsWith("#")) {
+    if (href.startsWith('#')) {
       // Update URL dengan hash tanpa reload halaman
-      window.history.pushState(null, "", href)
+      window.history.pushState(null, '', href);
 
       // Smooth scroll for anchor links
-      const element = document.querySelector(href)
+      const element = document.querySelector(href);
       if (element) {
         // Hitung offset untuk navbar fixed (80px height)
-        const navbarHeight = 80
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
+        const navbarHeight = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
         window.scrollTo({
           top: elementPosition,
-          behavior: "smooth",
-        })
+          behavior: 'smooth',
+        });
       }
     } else {
       // Navigate to other pages
-      router.push(href)
+      router.push(href);
     }
-    setMobileMenuOpen(false)
-  }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled ? "bg-green-900/95 shadow-lg backdrop-blur border-b border-green-950" : "bg-green-900/60 backdrop-blur border-b border-transparent"}
-        ${showNavbar ? "translate-y-0" : "-translate-y-full"}
+        ${scrolled ? 'bg-green-900/95 shadow-lg backdrop-blur border-b border-green-950' : 'bg-green-900/60 backdrop-blur border-b border-transparent'}
+        ${showNavbar ? 'translate-y-0' : '-translate-y-full'}
         transition-transform
       `}
     >
@@ -206,74 +186,21 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 justify-center items-center gap-8">
-          {/* Beranda */}
-          <button
-            onClick={() => handleNavClick("/")}
-            className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
-          >
-            <span>Beranda</span>
-            <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
-          </button>
-          {/* Program Studi Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
-                <span>Program Studi</span>
-                <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="center" className="w-80 bg-white/95 backdrop-blur border-green-200 shadow-xl">
-              {programStudi.map((program) => (
-                <DropdownMenuItem key={program.name} asChild>
-                  <Link
-                    href={program.href}
-                    className="flex flex-col items-start w-full p-4 hover:bg-green-50 transition-colors cursor-pointer"
-                  >
-                    <div className="font-medium text-gray-900">{program.name}</div>
-                    <div className="text-sm text-gray-600 mt-1">{program.description}</div>
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-          {/* Profil Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group flex items-center gap-1">
-                <span>Profil</span>
-                <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="center" className="w-64 bg-white/95 backdrop-blur border-green-200 shadow-xl">
-              {profil.map((item) => (
-                <DropdownMenuItem key={item.name} asChild>
-                  <button
-                    onClick={() => handleNavClick(item.href)}
-                    className="flex flex-col items-start w-full text-left p-3 hover:bg-green-50 transition-colors cursor-pointer"
-                  >
-                    <div className="font-medium text-gray-900">{item.name}</div>
-                    <div className="text-sm text-gray-600 mt-1">{item.description}</div>
-                  </button>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+        <nav className="hidden md:flex flex-1 justify-center items-center gap-4 lg:gap-6">
+          {navigation.map((item) => (
+            <button key={item.name} onClick={() => handleNavClick(item.href)} className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group whitespace-nowrap">
+              <span>{item.name}</span>
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
+            </button>
+          ))}
+
           {/* Berita */}
-          <button
-            onClick={() => handleNavClick("#berita")}
-            className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
-          >
+          <button onClick={() => handleNavClick('#berita')} className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group">
             <span>Berita</span>
             <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
           </button>
           {/* Kontak */}
-          <button
-            onClick={() => handleNavClick("#kontak")}
-            className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group"
-          >
+          <button onClick={() => handleNavClick('#kontak')} className="relative text-green-100 hover:text-amber-400 font-medium transition-colors px-2 py-1 focus:outline-none group">
             <span>Kontak</span>
             <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-amber-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full" />
           </button>
@@ -289,12 +216,7 @@ export function Header() {
             <DropdownMenuContent align="center" className="w-64 bg-white/95 backdrop-blur border-green-200 shadow-xl">
               {quickAccess.map((item) => (
                 <DropdownMenuItem key={item.name} asChild>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between w-full p-3 hover:bg-green-50 transition-colors cursor-pointer"
-                  >
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between w-full p-3 hover:bg-green-50 transition-colors cursor-pointer">
                     <div className="flex-1">
                       <div className="font-medium text-gray-900">{item.name}</div>
                       <div className="text-sm text-gray-600">{item.description}</div>
@@ -318,12 +240,7 @@ export function Header() {
             Daftar Sekarang
           </a>
           {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hover:text-white md:hidden text-white hover:bg-green-700 focus:bg-green-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
+          <Button variant="ghost" size="icon" className="hover:text-white md:hidden text-white hover:bg-green-700 focus:bg-green-700" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
           </Button>
         </div>
@@ -334,80 +251,23 @@ export function Header() {
         <div className="md:hidden border-t bg-green-900/95 backdrop-blur animate-slide-down">
           <div className="container px-4 py-2">
             <nav className="flex flex-col space-y-2">
-              <button
-                key="Beranda"
-                onClick={() => handleNavClick("/")}
-                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
-              >
-                Beranda
-              </button>
-
-              {/* Mobile Program Studi */}
-              <div className="space-y-1">
-                <div className="text-green-200 font-semibold text-base py-1">Program Studi</div>
-                {programStudi.map((program) => (
-                  <Link
-                    key={program.name}
-                    href={program.href}
-                    className="block text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {program.name}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Mobile Profil */}
-              <div className="space-y-1">
-                <div className="text-green-200 font-semibold text-base py-1">Profil</div>
-                {profil.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className="block text-left text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4 w-full"
-                  >
-                    {item.name}
-                  </button>
-                ))}
-              </div>
-              
-              <button
-                key="Berita"
-                onClick={() => handleNavClick("#berita")}
-                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
-              >
-                Berita
-              </button>
-              <button
-                key="Kontak"
-                onClick={() => handleNavClick("#kontak")}
-                className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1"
-              >
-                Kontak
-              </button>
+              {navigation.map((item) => (
+                <button key={item.name} onClick={() => handleNavClick(item.href)} className="text-left text-green-200 hover:text-amber-400 transition-colors text-base py-1">
+                  {item.name}
+                </button>
+              ))}
 
               {/* Mobile Akses Cepat */}
               <div className="space-y-1">
                 <div className="text-green-200 font-semibold text-base py-1">Akses Cepat</div>
                 {quickAccess.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4"
-                  >
+                  <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="block text-green-200 hover:text-amber-400 transition-colors text-sm py-0.5 pl-4">
                     {item.name}
                   </a>
                 ))}
               </div>
 
-              <Button
-                asChild
-                variant="outline"
-                size="sm"
-                className="w-full mt-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-green-900 bg-transparent"
-              >
+              <Button asChild variant="outline" size="sm" className="w-full mt-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-green-900 bg-transparent">
                 <a href="https://pmb.polnes.ac.id" target="_blank" rel="noopener noreferrer">
                   Daftar Sekarang
                 </a>
@@ -417,5 +277,5 @@ export function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

@@ -94,9 +94,11 @@ export function JurusanHero() {
             <Image src="/logo-ti.png" alt="Logo TI" width={80} height={80} className="object-contain" />
           </div>
           <Badge className="font-bold text-sm mb-6 bg-amber-400 py-2 px-4 text-gray-900 hover:bg-amber-300 shadow-lg">Politeknik Negeri Samarinda</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">Jurusan Teknologi Informasi</h1>
-          <p className="text-xl md:text-2xl mb-8 text-green-100 font-light drop-shadow-md">Membangun Masa Depan Digital Indonesia</p>
-          <p className="text-lg mb-10 text-green-100 max-w-2xl mx-auto drop-shadow-md">Jurusan Teknologi Informasi Politeknik Negeri Samarinda menawarkan program studi unggulan yang mempersiapkan lulusan siap kerja di era digital</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">D4 Teknologi Rekayasa Komputer</h1>
+          <p className="text-xl md:text-2xl mb-8 text-green-100 font-light drop-shadow-md">Membangun Kreativitas dan Teknologi</p>
+          <p className="text-lg mb-10 text-green-100 max-w-2xl mx-auto drop-shadow-md">
+            Program Studi D4 Teknologi Rekayasa Komputer Politeknik Negeri Samarinda menawarkan program studi unggulan yang mempersiapkan lulusan siap kerja di era digital
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-amber-400 text-black hover:bg-amber-300 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
               <Link href="#program-studi">
@@ -106,7 +108,7 @@ export function JurusanHero() {
             </Button>
             <Button asChild size="lg" className="bg-green-700 text-white hover:bg-green-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
               <Link href="#tentang-jurusan">
-                Tentang Jurusan
+                Tentang Program Studi
                 <ChevronDown className="h-5 w-5" />
               </Link>
             </Button>

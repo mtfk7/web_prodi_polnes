@@ -1,6 +1,6 @@
 import { Header } from '@/components/header';
 import { JurusanHero } from '@/components/jurusan-hero';
-import { ProgramStudiOverview } from '@/components/program-studi-overview';
+
 import { JurusanProfile } from '@/components/jurusan-profile';
 import { JurusanFacilities } from '@/components/jurusan-facilities';
 import { JurusanAchievements } from '@/components/jurusan-achievements';
@@ -13,6 +13,7 @@ import { HowToApply } from '@/components/jurusan-how-to-apply';
 import { VisionMission } from '@/components/jurusan-vision-mission';
 import { LecturersJurusan } from '@/components/jurusan-lecturers';
 import { StudentProjects } from '@/components/jurusan-student-projects';
+import { ProgramHighlights } from '@/components/trk/program-highlights-trk';
 import { ScrollAnimationWrapper } from '@/components/page-animation-wrapper';
 import Head from 'next/head';
 
@@ -20,7 +21,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Jurusan Teknologi Informasi POLNES</title>
+        <title>D4 Teknologi Rekayasa Komputer POLNES</title>
       </Head>
       <div className="min-h-screen bg-white">
         <Header />
@@ -32,7 +33,7 @@ export default function HomePage() {
           <VisionMission />
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper animationType="fadeInRight" delay={100}>
-          <ProgramStudiOverview />
+          <ProgramHighlights />
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper animationType="scaleIn" delay={150}>
           <JurusanFacilities />
